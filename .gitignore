@@ -75,5 +75,6 @@ BubbleGuys/Library
 BubbleGuys/Logs
 BubbleGuys/Packages/*
 !BubbleGuys/Packages/packages-lock.json
+!BubbleGuys/Packages/manifest.json
 BubbleGuys/UserSettings
 BubbleGuys/Temp
