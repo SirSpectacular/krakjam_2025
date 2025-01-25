@@ -8,12 +8,8 @@ public class AvilItem : MonoBehaviour
 {
     [SerializeField] private Type _type;
     [SerializeField] private float _volume;
-    private Animator _animator;
-    private bool _isTriggered;
-    private void Awake()
-    {
-        _animator = GetComponent<Animator>();
-    }
+    [SerializeField] private Animator _animator;
+    private bool _isTriggered; 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,7 +18,7 @@ public class AvilItem : MonoBehaviour
             return;
         }
 
-        PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
+        PlayerMovement playerMovement = collision.GetComponentInParent<PlayerMovement>();
         if (playerMovement == null)
         {
             return;

@@ -43,7 +43,9 @@ namespace Game.View.Player
         {
             Model.Player player = DataProvider.Instance.GetPlayer(_playerId);
             Vector2 force = player.Volume *
-                            PlayerPowerUps.Instance.AirDensity * -Physics2D.gravity + Physics2D.gravity * DataProvider.Instance.GetPlayer(_playerId).Mass;
+                            PlayerPowerUps.Instance.AirDensity * -Physics2D.gravity + 
+                            Physics2D.gravity * 
+                            DataProvider.Instance.GetPlayer(_playerId).Mass;
             _rigidbody.AddForce(force * Vector2.up);
         }
     }
