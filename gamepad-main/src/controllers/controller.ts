@@ -59,11 +59,11 @@ export class Controller {
             position: { top: "50%", left: "50%" },
             axis: "all",
             text: "",
-            // style: {
-            //     color: "hsla(0, 90%, 100%, 0.5)",
-            //     border: "2px solid currentColor",
-            //     ...options.style,
-            // },
+            style: {
+                color: "hsla(0, 90%, 100%, 0.5)",
+                border: "2px solid currentColor",
+                ...options.style,
+            },
         };
 
         this.options = Object.assign(this.options, options);

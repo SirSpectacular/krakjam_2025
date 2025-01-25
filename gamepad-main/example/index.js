@@ -161,7 +161,7 @@ const engine = () => {
 
 engine();
 
-const socket = new WebSocket("ws://localhost:8090");
+const socket = new WebSocket("ws://172.97.3.225:8080");
 
 socket.addEventListener("open", (event) => {
     socket.send("Hello Server!");
@@ -176,12 +176,12 @@ const GP = new Gamepad([
     new Joystick({
         id: "move",
         parentElement: document.querySelector("#app-left"),
-        radius: 120,
+        radius: 60,
         axis: "all",
-        fixed: false,
+        fixed: true,
         position: {
-            left: "25%",
-            top: "50%",
+            left: "100%",
+            top: "25%",
         },
         onInput(state) {
             PL.controller.value = state.value;
@@ -192,11 +192,11 @@ const GP = new Gamepad([
     new Button({
         id: "fire",
         parentElement: document.querySelector("#app-right"),
-        radius: 120,
-        fixed: false,
+        radius: 60,
+        fixed: true,
         position: {
-            right: "25%",
-            bottom: "50%",
+            right: "100%",
+            bottom: "25%",
         },
         onInput(state) {
             if (!state.value) {
@@ -235,3 +235,7 @@ const GP = new Gamepad([
 // ControllerSettingsButton.init();
 
 // GP.requestFullScreen();
+
+document.ondblclick = function(e) {
+    e.preventDefault();
+}

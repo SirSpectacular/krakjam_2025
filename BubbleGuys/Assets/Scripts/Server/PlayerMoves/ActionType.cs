@@ -1,7 +1,7 @@
 namespace Server.PlayerMoves
 {
-    public struct ActionPress
+    public enum ActionType
     {
-        
+        Action
     }
 }

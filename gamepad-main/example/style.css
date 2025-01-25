@@ -7,8 +7,10 @@
 }
 
 body {
+    margin:0;
     overflow: hidden;
     font: 16px/1.2 sans-serif;
+    touch-action: pan-x pan-y;
 }
 
 #app {
@@ -22,19 +24,19 @@ body {
     overflow: hidden;
     color: hsla(0, 0%, 100%, 0.85);
 
-    /*background-color: #170d24;*/
-    background-image: url("forest.jpeg");
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;
-    /*background-image: radial-gradient(*/
-    /*        ellipse at 10% 90%,*/
-    /*        #3c2d83 0%,*/
-    /*        transparent 55%*/
-    /*    ),*/
-    /*    radial-gradient(ellipse at 90% 90%, #8f2746 0%, transparent 55%),*/
-    /*    radial-gradient(ellipse at 90% 10%, #395aac 0%, transparent 55%),*/
-    /*    radial-gradient(ellipse at 10% 10%, #35244f 0%, transparent 55%);*/
+    background-color: #170d24;
+    /*background-image: url("forest.jpeg");*/
+    /*background-size:     cover;                      !* <------ *!*/
+    /*background-repeat:   no-repeat;*/
+    /*background-position: center center;*/
+    background-image: radial-gradient(
+            ellipse at 10% 90%,
+            #3c2d83 0%,
+            transparent 55%
+        ),
+        radial-gradient(ellipse at 90% 90%, #8f2746 0%, transparent 55%),
+        radial-gradient(ellipse at 90% 10%, #395aac 0%, transparent 55%),
+        radial-gradient(ellipse at 10% 10%, #35244f 0%, transparent 55%);
 }
 
 #app-left {
@@ -83,13 +85,22 @@ body {
     box-shadow: 0 0 50px currentColor;
 }
 
-.Gamepad-controller {
-    background-image: url("szop.png");
-    background-size:     75% 75%;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;
-}
+/*@media all and (min-width:0px) and (max-width: 1000px) {*/
+/*    #app {*/
+/*        transform: rotate(90deg);*/
+/*        transform-origin:bottom left;*/
 
-.Gamepad-joystick-knob {
-    background-image: url("szop.png");
-}
+/*        position:absolute;*/
+/*        top: -100vw;*/
+/*        left: 0;*/
+
+/*        height:100vw;*/
+/*        width:100vh;*/
+
+/*        background-color:#000;*/
+/*        color:#fff;*/
+
+/*        overflow:auto;*/
+/*    }*/
+/*}*/
+

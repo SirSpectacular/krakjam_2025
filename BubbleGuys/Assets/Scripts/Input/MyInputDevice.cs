@@ -45,8 +45,8 @@ namespace Input
         {
             base.FinishSetup();
             _instance = this;
-            button = GetChildControl<ButtonControl>("button");
-            axis = GetChildControl<AxisControl>("axis");
+            button = GetChildControl<ButtonControl>("button1");
+            axis = GetChildControl<AxisControl>("axis1_H");
         }
 
         public static void OnUpdate(MyDeviceState state)
