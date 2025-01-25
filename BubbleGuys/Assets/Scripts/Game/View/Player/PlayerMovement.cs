@@ -50,7 +50,7 @@ namespace Game.View.Player
                 return;
             }
 
-            float torque = _rotationFactor * _rotationSpeed * Time.fixedDeltaTime;
+            float torque = _rotationFactor * _rotationSpeed;
             _body.AddTorque(torque);
         }
     
@@ -61,7 +61,7 @@ namespace Game.View.Player
                 return;
             }
 
-            Vector2 force = _moveDirection * _moveFactor * Time.fixedDeltaTime;
+            Vector2 force = _moveDirection * _moveFactor;
             _body.AddForce(force);
         }
 
@@ -80,8 +80,8 @@ namespace Game.View.Player
             }
 
             Vector2 fartDirection = -(_anusPosition.position - transform.position).normalized;
-            Vector2 force = fartDirection * _fartFactor * Time.fixedDeltaTime;
-            float amountToSubtract = Time.fixedDeltaTime * _loseVolumeFactor;
+            Vector2 force = fartDirection * _fartFactor;
+            float amountToSubtract = _loseVolumeFactor;
             float subtractedAmount = player.SubtractVolume(amountToSubtract);
             _body.AddForce(force * subtractedAmount / subtractedAmount);
         }
