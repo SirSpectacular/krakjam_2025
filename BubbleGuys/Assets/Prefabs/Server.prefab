@@ -41,6 +41,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 5362537157109803489}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17edd3a3174dd429a9a8a20f06269117, type: 3}
+  m_Script: {fileID: 11500000, guid: 37add3c8c3f54d8fbcc811bba666cce1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  address: 127.0.0.1
+  port: 8090
+  onOpen:
+    m_PersistentCalls:
+      m_Calls: []
+  onMessage:
+    m_PersistentCalls:
+      m_Calls: []
+  onClose:
+    m_PersistentCalls:
+      m_Calls: []
