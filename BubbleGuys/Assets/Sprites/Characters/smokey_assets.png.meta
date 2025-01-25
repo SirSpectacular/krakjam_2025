@@ -1,0 +1,905 @@
+fileFormatVersion: 2
+guid: 32768ebec157e6f488039c9220d5bb2b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5890792798173399778
+    second: smokey_assets_0
+  - first:
+      213: 2571983810876292215
+    second: smokey_assets_1
+  - first:
+      213: -8836485678353885999
+    second: smokey_assets_2
+  - first:
+      213: 2147868285814401537
+    second: smokey_assets_3
+  - first:
+      213: -8180464895872304659
+    second: smokey_assets_4
+  - first:
+      213: 3392224264047046332
+    second: smokey_assets_5
+  - first:
+      213: 2638241457886870294
+    second: smokey_assets_6
+  - first:
+      213: -9189030720105896229
+    second: smokey_assets_7
+  - first:
+      213: 5048416556645826062
+    second: smokey_assets_8
+  - first:
+      213: -1790928269447609291
+    second: smokey_assets_9
+  - first:
+      213: -9089484534765576345
+    second: smokey_assets_10
+  - first:
+      213: -3770908497534718850
+    second: smokey_assets_11
+  - first:
+      213: 2951344185496719263
+    second: smokey_assets_12
+  - first:
+      213: 3538645042910210983
+    second: smokey_assets_13
+  - first:
+      213: 8794055170914956538
+    second: smokey_assets_14
+  - first:
+      213: 6639507562371437190
+    second: smokey_assets_15
+  - first:
+      213: -1720430845216615513
+    second: smokey_assets_16
+  - first:
+      213: 5592927751786315707
+    second: smokey_assets_17
+  - first:
+      213: -4095300916406970292
+    second: smokey_assets_18
+  - first:
+      213: 2177458860119514064
+    second: smokey_assets_19
+  - first:
+      213: 9219395477708124602
+    second: smokey_assets_20
+  - first:
+      213: -5749719928520684131
+    second: smokey_assets_21
+  - first:
+      213: -50634178700733305
+    second: smokey_assets_22
+  - first:
+      213: 4303508646611601977
+    second: smokey_assets_23
+  - first:
+      213: 1672874978185949131
+    second: smokey_assets_24
+  - first:
+      213: -2148362345635670715
+    second: smokey_assets_25
+  - first:
+      213: -8313705008783220655
+    second: smokey_assets_26
+  - first:
+      213: 8844260048124686040
+    second: smokey_assets_27
+  - first:
+      213: -408849625573779352
+    second: smokey_assets_28
+  - first:
+      213: -6543293584927951139
+    second: smokey_assets_29
+  - first:
+      213: 1011775341687250923
+    second: smokey_assets_30
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: smokey_assets_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 431
+        width: 89
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15f17b2923bf3ea0800000000000000
+      internalID: -5890792798173399778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 440
+        width: 101
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77c365726a581b320800000000000000
+      internalID: 2571983810876292215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_2
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 448
+        width: 56
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4d3eed71f7e5580800000000000000
+      internalID: -8836485678353885999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_3
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 431
+        width: 89
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a6b4873d2cecd10800000000000000
+      internalID: 2147868285814401537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_4
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 440
+        width: 96
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de97af7e486297e80800000000000000
+      internalID: -8180464895872304659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_5
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 448
+        width: 56
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbe2cf0def9931f20800000000000000
+      internalID: 3392224264047046332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_6
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 409
+        width: 63
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61b3e01c0aaec9420800000000000000
+      internalID: 2638241457886870294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_7
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 426
+        width: 29
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd6afe1ee310a7080800000000000000
+      internalID: -9189030720105896229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_8
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 411
+        width: 81
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e33115c149f0640800000000000000
+      internalID: 5048416556645826062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_9
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 409
+        width: 63
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 534ce594a385527e0800000000000000
+      internalID: -1790928269447609291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_10
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 432
+        width: 29
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76f14e949f9abd180800000000000000
+      internalID: -9089484534765576345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_11
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 411
+        width: 80
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7ce0fb53ba0babc0800000000000000
+      internalID: -3770908497534718850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_12
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 302
+        width: 34
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9f427a56e745f820800000000000000
+      internalID: 2951344185496719263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_13
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 255
+        width: 161
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ab2cd00beacb1130800000000000000
+      internalID: 3538645042910210983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_14
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 275
+        width: 89
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4b295c592ca0a70800000000000000
+      internalID: 8794055170914956538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_15
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 253
+        width: 63
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6825baa43f4442c50800000000000000
+      internalID: 6639507562371437190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_16
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 222
+        width: 53
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a31d32f24dcf18e0800000000000000
+      internalID: -1720430845216615513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_17
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 222
+        width: 44
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfb5ab58221e9d40800000000000000
+      internalID: 5592927751786315707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_18
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 198
+        width: 100
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c481b3da3819a27c0800000000000000
+      internalID: -4095300916406970292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_19
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 134
+        width: 167
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db537eeb43e73e10800000000000000
+      internalID: 2177458860119514064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_20
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 191
+        width: 80
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1b2ac275fd1ff70800000000000000
+      internalID: 9219395477708124602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_21
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 139
+        width: 111
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d4a863034e430b0800000000000000
+      internalID: -5749719928520684131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_22
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 155
+        width: 89
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7849c059b7c1c4ff0800000000000000
+      internalID: -50634178700733305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_23
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 176
+        width: 68
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93a4b19205229bb30800000000000000
+      internalID: 4303508646611601977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_24
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 133
+        width: 63
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcfa96cedee373710800000000000000
+      internalID: 1672874978185949131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_25
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 17
+        width: 29
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5459f8344db7f22e0800000000000000
+      internalID: -2148362345635670715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_26
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 33
+        width: 42
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1502718a759cf9c80800000000000000
+      internalID: -8313705008783220655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_27
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 22
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dea6a5a7af1dba70800000000000000
+      internalID: 8844260048124686040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_28
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 20
+        width: 52
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8689f158e69735af0800000000000000
+      internalID: -408849625573779352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_29
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 22
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6f641072d8135a0800000000000000
+      internalID: -6543293584927951139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smokey_assets_30
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 23
+        width: 77
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef94c9005c8a0e00800000000000000
+      internalID: 1011775341687250923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
