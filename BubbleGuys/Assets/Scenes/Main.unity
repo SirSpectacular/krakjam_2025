@@ -861,6 +861,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 728670931857179446, guid: d26fc20c8c4f7a94fa4b0e99dc3fc492, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 728670931857179446, guid: d26fc20c8c4f7a94fa4b0e99dc3fc492, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1260902137918605885, guid: d26fc20c8c4f7a94fa4b0e99dc3fc492, type: 3}
       propertyPath: _playerId
       value: 1
@@ -875,7 +883,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2922373694492524681, guid: d26fc20c8c4f7a94fa4b0e99dc3fc492, type: 3}
       propertyPath: m_Offset.x
-      value: 0.02
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4228181529665654279, guid: d26fc20c8c4f7a94fa4b0e99dc3fc492, type: 3}
       propertyPath: m_Enabled
@@ -883,11 +891,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4825566630294832168, guid: d26fc20c8c4f7a94fa4b0e99dc3fc492, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.089
+      value: -0.164
       objectReference: {fileID: 0}
     - target: {fileID: 4825566630294832168, guid: d26fc20c8c4f7a94fa4b0e99dc3fc492, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.088
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 5044583202910092044, guid: d26fc20c8c4f7a94fa4b0e99dc3fc492, type: 3}
       propertyPath: _playerId
@@ -895,11 +903,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5044583202910092044, guid: d26fc20c8c4f7a94fa4b0e99dc3fc492, type: 3}
       propertyPath: _fartFactor
-      value: 100
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 5044583202910092044, guid: d26fc20c8c4f7a94fa4b0e99dc3fc492, type: 3}
       propertyPath: _moveFactor
-      value: 50
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 5044583202910092044, guid: d26fc20c8c4f7a94fa4b0e99dc3fc492, type: 3}
       propertyPath: _rotationFactor
