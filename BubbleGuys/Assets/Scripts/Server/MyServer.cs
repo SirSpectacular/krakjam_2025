@@ -13,7 +13,10 @@ namespace Server
     public class MyServer: WebSocketServer.WebSocketServer
     {
         [SerializeField] private List<WebSocketConnection> _playerMap = new List<WebSocketConnection>();
-        
+        public static UnityEvent<MyDeviceState> Player1 = new UnityEvent<MyDeviceState>();
+        public static UnityEvent<MyDeviceState> Player2 = new UnityEvent<MyDeviceState>();
+        public static UnityEvent<MyDeviceState> Player3 = new UnityEvent<MyDeviceState>();
+        public static UnityEvent<MyDeviceState> Player4 = new UnityEvent<MyDeviceState>();
 
         public override void OnOpen(WebSocketConnection connection) {
             if (_playerMap.Count >= 4)
@@ -40,9 +43,9 @@ namespace Server
                 if (split.Length == 3)
                 {
                     float power = float.Parse(split[1], CultureInfo.InvariantCulture.NumberFormat); 
-                    float angle = float.Parse(split[2], CultureInfo.InvariantCulture.NumberFormat);
+                    float angleFromSocket = float.Parse(split[2], CultureInfo.InvariantCulture.NumberFormat);
                     //angleFromSocket is from 0-2pi, where 0 starts in 2nd quadrant of XY coordinates, need to change it
-                    // float angle = (angleFromSocket + 2 * Mathf.PI) % (2 * Mathf.PI);
+                    float angle = (angleFromSocket + Mathf.PI / 2) % (2 * Mathf.PI);
                     JoystickMove move = new JoystickMove(power, angle);
 
                     OnUpdateMove(playerNo, move);
@@ -57,94 +60,50 @@ namespace Server
         }
 
         private void OnUpdateMove(int playerNo, JoystickMove move)
-        {
-            //convert move (2d vector) to short
+        {   
             Vector2 normalizedVector = move.move.normalized;
-            float up = normalizedVector.y >= 0 ? normalizedVector.y : 0;
-            float down = normalizedVector.y < 0 ? normalizedVector.y : 0;
-            float right = normalizedVector.x >= 0 ? normalizedVector.x : 0;
-            float left = normalizedVector.x < 0 ? normalizedVector.x : 0;
             Debug.Log("(X,Y) = (" + normalizedVector.x +"," + normalizedVector.y + ")");
-            Debug.Log("(up,down,right,left) = (" + up +"," + down + "," + right + "," + left + ")");
-
-            MyDeviceState moveState;
-            if (playerNo == 1)
-            {
-                moveState = new MyDeviceState
-                {
-                    player1_up = up,
-                    player1_down = down,
-                    player1_right = right,
-                    player1_left = left,
-                };
-            } else if (playerNo == 2)
-            {
-                moveState = new MyDeviceState
-                {
-                    player2_up = up,
-                    player2_down = down,
-                    player2_right = right,
-                    player2_left = left,
-                };
-            } else if (playerNo == 3)
-            {
-                moveState = new MyDeviceState
-                {
-                    player3_up = up,
-                    player3_down = down,
-                    player3_right = right,
-                    player3_left = left,
-                };
-            } else if (playerNo == 4)
-            {
-                moveState = new MyDeviceState
-                {
-                    player4_up = up,
-                    player4_down = down,
-                    player4_right = right,
-                    player4_left = left,
-                };
-            } else
-            {
-                return;
-            }
             
-            MyInputDevice.OnUpdate(moveState);
+            MyDeviceState state = new MyDeviceState();
+            state.MoveVector = normalizedVector;
+            
+            switch (playerNo)
+            {
+                case 1:
+                    Player1.Invoke(state);
+                    break;
+                case 2:
+                    Player2.Invoke(state);
+                    break;
+                case 3:
+                    Player3.Invoke(state);
+                    break;
+                case 4:
+                    Player4.Invoke(state);
+                    break;
+            }
         }
         
         private void OnUpdateAction(int playerNo, ActionType action)
         {
-            MyDeviceState moveState;
-            if (playerNo == 1)
+            MyDeviceState state = new MyDeviceState();
+            state.ButtonClicked = true;
+            
+            switch (playerNo)
             {
-                moveState = new MyDeviceState
-                {
-                    button1 = 2
-                };
-            } else if (playerNo == 2)
-            {
-                moveState = new MyDeviceState
-                {
-                    button2 = 2
-                };
-            } else if (playerNo == 3)
-            {
-                moveState = new MyDeviceState
-                {
-                    button3 = 2
-                };
-            } else if (playerNo == 4)
-            {
-                moveState = new MyDeviceState
-                {
-                    button4 = 2
-                };
-            } else
-            {
-                return;
+                case 1:
+                    Player1.Invoke(state);
+                    break;
+                case 2:
+                    Player2.Invoke(state);
+                    break;
+                case 3:
+                    Player3.Invoke(state);
+                    break;
+                case 4:
+                    Player4.Invoke(state);
+                    break;
             }
-
-            MyInputDevice.OnUpdate(moveState);
         }
 
         public override void OnClose(WebSocketConnection connection) {

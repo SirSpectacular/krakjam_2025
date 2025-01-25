@@ -14,7 +14,7 @@ namespace Server.PlayerMoves
         {
             this.power = power;
             this.angle = angle;
-            move = new Vector2(power * Mathf.Cos(angle), power * Mathf.Sin(angle));
+            move = new Vector2(-1 * power * Mathf.Cos(angle), power * Mathf.Sin(angle));
         }
     }
 }
