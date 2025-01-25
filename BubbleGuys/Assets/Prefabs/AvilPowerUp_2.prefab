@@ -197,9 +197,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2731869305065679161}
   - component: {fileID: 5293124890624716669}
-  - component: {fileID: 1149144212793828916}
   - component: {fileID: 8955783622150542401}
   - component: {fileID: 3420590657515070793}
+  - component: {fileID: 2755146670781407390}
   - component: {fileID: 8953557155721460030}
   m_Layer: 0
   m_Name: physics
@@ -252,21 +252,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 0
---- !u!114 &1149144212793828916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8092822567109791030}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a71a78a15f3ae4445bd3914a8f7b6053, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  collisionParticleSystem: {fileID: 7068230858965996020}
-  sr: {fileID: 8953557155721460030}
-  once: 1
 --- !u!58 &8955783622150542401
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -322,6 +307,48 @@ MonoBehaviour:
   angularDragMultiplier: 0.5
   moveFactorMultiplier: 0.8
   rotationFactorMultiplier: 0.6
+--- !u!114 &2755146670781407390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8092822567109791030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f788778b4f98664c9f203c0de9face8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnTriggerEnter:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7068230858965996020}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Play
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnTriggerExit:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7068230858965996020}
+        m_TargetAssemblyTypeName: UnityEngine.ParticleSystem, UnityEngine
+        m_MethodName: Stop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!212 &8953557155721460030
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -408,6 +435,14 @@ PrefabInstance:
     - target: {fileID: 8194992990867289332, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
       propertyPath: m_Materials.Array.size
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194992990867289334, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 8194992990867289334, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 8194992990867289334, guid: 99bc28c0d45f51c4fbac01080b73edc7, type: 3}
       propertyPath: m_LocalPosition.x
