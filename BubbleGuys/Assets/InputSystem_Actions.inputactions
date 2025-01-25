@@ -2668,6 +2668,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "New action map",
+            "id": "87695478-27a5-455b-9a1b-107eb9ba2515",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "18e331f6-8b20-4ac7-b249-e7e85c8038b0",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "481a1eaf-94c2-4e00-9416-f5562682c28c",
+                    "path": "<Keyboard>/anyKey",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [

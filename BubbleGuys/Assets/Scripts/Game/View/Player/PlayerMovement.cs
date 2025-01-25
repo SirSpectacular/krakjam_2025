@@ -1,27 +1,26 @@
+using System.Collections;
 using Game.Controller;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
-using System.Collections;  // ← ważne, żeby dodać to dla IEnumerator
 
-namespace Game.Player
+// ← ważne, żeby dodać to dla IEnumerator
+
+namespace Game.View.Player
 {
     public class PlayerMovement : MonoBehaviour
     {
+        [SerializeField] public int _playerId;
         [SerializeField] private float _rotationFactor;
         [SerializeField] private float _moveFactor;
         [SerializeField] private float _fartFactor;
         [SerializeField] private float _loseVolumeFactor;
     
-        [SerializeField] private Rigidbody2D _rigidbody;
         [SerializeField] private Transform _anusPosition;
         private float _rotationSpeed;
         private Vector2 _moveDirection;
         private bool _isFarting;
-
-        public void OnRotate(InputValue value)
-        {
-            _rotationSpeed = value.Get<float>();
-        }
+        private Rigidbody2D _body;
 
         public void OnMove(InputValue value)
         {
@@ -33,9 +32,13 @@ namespace Game.Player
             _isFarting = value.Get<float>() > 0;
         }
 
-        void Update()
+        private void Start()
         {
-            CheckRotation();
+            _body = GetComponentInChildren<Rigidbody2D>();
+        }
+
+        void FixedUpdate()
+        {
             CheckMovement();
             CheckFart();
         }
@@ -47,8 +50,8 @@ namespace Game.Player
                 return;
             }
 
-            float torque = _rotationFactor * _rotationSpeed * Time.deltaTime;
-            _rigidbody.AddTorque(torque);
+            float torque = _rotationFactor * _rotationSpeed * Time.fixedDeltaTime;
+            _body.AddTorque(torque);
         }
     
         private void CheckMovement()
@@ -58,8 +61,8 @@ namespace Game.Player
                 return;
             }
 
-            Vector2 force = _moveDirection * _moveFactor * Time.deltaTime;
-            _rigidbody.AddForce(force);
+            Vector2 force = _moveDirection * _moveFactor * Time.fixedDeltaTime;
+            _body.AddForce(force);
         }
 
         private void CheckFart()
@@ -68,75 +71,19 @@ namespace Game.Player
             {
                 return;
             }
-
-            Model.Player player = DataProvider.Instance.Player;
-            if (player.Volume - Model.Player.MinVolume <= Mathf.Epsilon)
+            
+            Model.Player player = DataProvider.Instance.GetPlayer(_playerId);
+            if (player.Volume - player.BaseVolume <= Mathf.Epsilon)
             {
                 //Not enough volume to fart;
                 return;
             }
 
             Vector2 fartDirection = -(_anusPosition.position - transform.position).normalized;
-            Vector2 force = fartDirection * _fartFactor * Time.deltaTime;
-            player.Volume -= Time.deltaTime * _loseVolumeFactor;
-            _rigidbody.AddForce(force);
-        }
-
-        // --------------------------------------------------------------------
-        // DODAJEMY PUBLICZNĄ METODĘ: czasowa modyfikacja parametrów "jak kowadło"
-        // --------------------------------------------------------------------
-        /// <summary>
-        /// Na określony czas modyfikuje właściwości Rigidbody2D i współczynniki ruchu,
-        /// tak aby postać była cięższa/trudniejsza do zatrzymania.
-        /// </summary>
-        public IEnumerator ApplyAnvilEffect(
-            float duration,
-            float massMultiplier,
-            float gravityScaleMultiplier,
-            float linearDragMultiplier,
-            float angularDragMultiplier,
-            float moveFactorMultiplier,
-            float rotationFactorMultiplier
-            // możesz dodać loseVolumeFactorMultiplier, jeśli chcesz to też zmieniać
-        )
-        {
-            // 1) Zapamiętujemy oryginalne wartości
-            float originalMass = _rigidbody.mass;
-            float originalGravity = _rigidbody.gravityScale;
-            float originalDrag = _rigidbody.linearDamping;
-            float originalAngularDrag = _rigidbody.angularDamping;
-
-            float originalMoveFactor = _moveFactor;
-            float originalRotationFactor = _rotationFactor;
-            float originalLoseVolumeFactor = _loseVolumeFactor; // jeśli chcesz zmieniać
-
-            // 2) Modyfikujemy wartości
-            _rigidbody.mass *= massMultiplier;
-            _rigidbody.gravityScale *= gravityScaleMultiplier;
-            _rigidbody.linearDamping *= linearDragMultiplier;
-            _rigidbody.angularDamping *= angularDragMultiplier;
-
-            _moveFactor *= moveFactorMultiplier;
-            _rotationFactor *= rotationFactorMultiplier;
-            // _loseVolumeFactor *= ... (w razie potrzeby)
-
-            // (Opcjonalnie) wyświetl w konsoli, że efekt się zaczął
-            Debug.Log($"[PlayerMovement] AnvilEffect START, mass={_rigidbody.mass}, moveFactor={_moveFactor}");
-
-            // 3) Odczekaj "duration" sekund
-            yield return new WaitForSeconds(duration);
-
-            // 4) Przywracamy oryginały
-            _rigidbody.mass = originalMass;
-            _rigidbody.gravityScale = originalGravity;
-            _rigidbody.linearDamping = originalDrag;
-            _rigidbody.angularDamping = originalAngularDrag;
-
-            _moveFactor = originalMoveFactor;
-            _rotationFactor = originalRotationFactor;
-            // _loseVolumeFactor = originalLoseVolumeFactor; // w razie potrzeby
-
-            Debug.Log("[PlayerMovement] AnvilEffect END (przywrócone wartości).");
+            Vector2 force = fartDirection * _fartFactor * Time.fixedDeltaTime;
+            float amountToSubtract = Time.fixedDeltaTime * _loseVolumeFactor;
+            float subtractedAmount = player.SubtractVolume(amountToSubtract);
+            _body.AddForce(force * subtractedAmount / subtractedAmount);
         }
     }
 }
