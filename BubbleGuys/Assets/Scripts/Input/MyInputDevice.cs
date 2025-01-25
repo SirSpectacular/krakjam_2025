@@ -35,8 +35,8 @@ namespace Input
         // get added to the Device either way. When you expose them as properties,
         // it is easier to get to the Controls in code.
 
-        public ButtonControl button { get; private set; }
-        public AxisControl axis { get; private set; }
+        // public ButtonControl button { get; private set; }
+        // public AxisControl axis { get; private set; }
 
         // The Input System calls this method after it constructs the Device,
         // but before it adds the device to the system. Do any last-minute setup
@@ -45,8 +45,8 @@ namespace Input
         {
             base.FinishSetup();
             _instance = this;
-            button = GetChildControl<ButtonControl>("button1");
-            axis = GetChildControl<AxisControl>("axis1_H");
+            // button = GetChildControl<ButtonControl>("button1");
+            // axis = GetChildControl<AxisControl>("axis1_H");
         }
 
         public static void OnUpdate(MyDeviceState state)

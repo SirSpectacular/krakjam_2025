@@ -38,14 +38,38 @@ namespace Input
         
         [InputControl(layout = "Button", bit = 3)] [FieldOffset(3)]
         public ushort button4;
-        
-        [InputControl(layout = "Axis")] [FieldOffset(4)] public short axis1_H;
-        [InputControl(layout = "Axis")] [FieldOffset(5)] public short axis1_V;
-        [InputControl(layout = "Axis")] [FieldOffset(6)] public short axis2_H;
-        [InputControl(layout = "Axis")] [FieldOffset(7)] public short axis2_V;
-        [InputControl(layout = "Axis")] [FieldOffset(8)] public short axis3_H;
-        [InputControl(layout = "Axis")] [FieldOffset(9)] public short axis3_V;
-        [InputControl(layout = "Axis")] [FieldOffset(10)] public short axis4_H;
-        [InputControl(layout = "Axis")] [FieldOffset(11)] public short axis4_V;
+
+        [InputControl(layout = "Dpad", bit = 2)] [FieldOffset(4)]
+        public float player1_up;
+        [InputControl(layout = "Dpad", bit = 3)] [FieldOffset(5)]
+        public float player1_down;
+        [InputControl(layout = "Dpad", bit = 5)] [FieldOffset(6)]
+        public float player1_left;
+        [InputControl(layout = "Dpad", bit = 4)] [FieldOffset(7)]
+        public float player1_right;
+        [InputControl(layout = "Dpad")] [FieldOffset(8)]
+        public float player2_up;
+        [InputControl(layout = "Dpad")] [FieldOffset(9)]
+        public float player2_down;
+        [InputControl(layout = "Dpad")] [FieldOffset(10)]
+        public float player2_left;
+        [InputControl(layout = "Dpad")] [FieldOffset(11)]
+        public float player2_right;
+        [InputControl(layout = "Dpad")] [FieldOffset(12)]
+        public float player3_up;
+        [InputControl(layout = "Dpad")] [FieldOffset(13)]
+        public float player3_down;
+        [InputControl(layout = "Dpad")] [FieldOffset(14)]
+        public float player3_left;
+        [InputControl(layout = "Dpad")] [FieldOffset(15)]
+        public float player3_right;
+        [InputControl(layout = "Dpad")] [FieldOffset(16)]
+        public float player4_up;
+        [InputControl(layout = "Dpad")] [FieldOffset(17)]
+        public float player4_down;
+        [InputControl(layout = "Dpad")] [FieldOffset(18)]
+        public float player4_left;
+        [InputControl(layout = "Dpad")] [FieldOffset(19)]
+        public float player4_right;
     }
 }
