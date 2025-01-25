@@ -28,7 +28,6 @@ export class Joystick extends Controller {
 
         if (this.options.axis === "all") {
             this.state.value = this.state.dragDistance / this.options.radius;
-            console.log(this.state);
 
             const x_pos =
                 this.state.dragDistance * Math.cos(this.state.angle) +

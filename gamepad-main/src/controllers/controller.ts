@@ -112,6 +112,8 @@ export class Controller {
     }
 
     handleStart(evt: PointerEvent) {
+        const pointerId = 1;
+
         // Is already assigned? Do nothing
         if (this.state.pointerIdentifier > -1) {
             return;
@@ -125,14 +127,14 @@ export class Controller {
 
         evt.preventDefault();
 
-        this.parentElement.setPointerCapture(evt.pointerId);
+        this.parentElement.setPointerCapture(pointerId);
 
         const { x, y } = this.getPointerXY(evt);
 
         this.state.isPressed = true;
         this.state.isActive = this.options.spring ? true : !this.state.isActive;
 
-        this.state.pointerIdentifier = evt.pointerId;
+        this.state.pointerIdentifier = pointerId;
         this.state.x_start = x;
         this.state.y_start = y;
 
@@ -150,8 +152,9 @@ export class Controller {
     }
 
     handleMove(evt: PointerEvent) {
+        const pointerId = 1;
+
         if (
-            !this.parentElement.hasPointerCapture(evt.pointerId) ||
             !this.state.isPressed ||
             this.state.pointerIdentifier < 0
         ) {
@@ -183,6 +186,8 @@ export class Controller {
     }
 
     handleEnd(evt: PointerEvent) {
+        const pointerId = 1;
+
         // If touch was not registered on touch-start - do nothing
         if (this.state.pointerIdentifier < 0) {
             return;
@@ -194,7 +199,7 @@ export class Controller {
             return;
         }
 
-        this.parentElement.releasePointerCapture(evt.pointerId);
+        this.parentElement.releasePointerCapture(pointerId);
 
         this.state.pointerIdentifier = -1;
         this.state.isDrag = false;
