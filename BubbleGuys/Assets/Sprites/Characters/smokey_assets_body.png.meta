@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      smokey_assets_body_0: 7235809681760128520
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
