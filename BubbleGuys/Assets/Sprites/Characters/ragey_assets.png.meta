@@ -260,12 +260,12 @@ TextureImporter:
       name: ragey_assets_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 413
-        width: 62
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 24
+        y: 398
+        width: 151
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5315686, y: 0.41975045}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -279,323 +279,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ragey_assets_1
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 459
-        width: 36
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d2ac63e281a812dc0800000000000000
-      internalID: -3665496785243682259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_2
-      rect:
-        serializedVersion: 2
-        x: 105
-        y: 459
-        width: 21
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0d9ee4b1d2b6c2920800000000000000
-      internalID: 2966864096006171088
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_3
-      rect:
-        serializedVersion: 2
-        x: 109
-        y: 408
-        width: 56
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 643b63794fdb8cfd0800000000000000
-      internalID: -2321396749702876346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_4
-      rect:
-        serializedVersion: 2
-        x: 249
-        y: 413
-        width: 63
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 054043ffca85b78d0800000000000000
-      internalID: -2847584839342488496
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_5
-      rect:
-        serializedVersion: 2
-        x: 278
-        y: 459
-        width: 36
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a1a1b2def3ef6abd0800000000000000
-      internalID: -2619126582753945062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_6
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 459
-        width: 22
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c15a851c72ff63700800000000000000
-      internalID: 519883353220490524
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_7
-      rect:
-        serializedVersion: 2
-        x: 325
-        y: 408
-        width: 56
-        height: 57
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 41fef407f4be779d0800000000000000
-      internalID: -2776491918831390956
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_8
-      rect:
-        serializedVersion: 2
-        x: 94
-        y: 426
-        width: 16
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2c475fb96ff0bf540800000000000000
-      internalID: 5042641759624328386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_9
-      rect:
-        serializedVersion: 2
-        x: 313
-        y: 426
-        width: 16
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 48032f9e3f7321000800000000000000
-      internalID: 5128070322335876
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_10
-      rect:
-        serializedVersion: 2
-        x: 25
-        y: 402
-        width: 31
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6a9f572595559a3d0800000000000000
-      internalID: -3194928618518742618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_11
-      rect:
-        serializedVersion: 2
-        x: 88
-        y: 410
-        width: 29
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bb16ec29033d30290800000000000000
-      internalID: -7925258713667051077
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_12
-      rect:
-        serializedVersion: 2
-        x: 151
-        y: 399
-        width: 24
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ae2b50138557c8c00800000000000000
-      internalID: 904226646834655978
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_13
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 402
-        width: 31
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7b8bb6a4b862be0a0800000000000000
-      internalID: -6851340028423194441
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_14
-      rect:
-        serializedVersion: 2
-        x: 307
-        y: 410
-        width: 28
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 239c1a63de3f80370800000000000000
-      internalID: 8289143314324769074
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ragey_assets_15
       rect:
         serializedVersion: 2
-        x: 366
-        y: 399
-        width: 25
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 240
+        y: 400
+        width: 150
+        height: 79
+      alignment: 9
+      pivot: {x: 0.540446, y: 0.41771883}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -609,367 +301,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ragey_assets_16
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 307
-        width: 58
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 69b0b6b685bbf97b0800000000000000
-      internalID: -5215243855038051434
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_17
-      rect:
-        serializedVersion: 2
-        x: 74
-        y: 332
-        width: 54
-        height: 27
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f6e42ff43486eeb10800000000000000
-      internalID: 2012660721794567791
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_18
-      rect:
-        serializedVersion: 2
-        x: 142
-        y: 331
-        width: 37
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b609f622ea1fed70800000000000000
-      internalID: 9074501332793624244
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_19
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 307
-        width: 47
-        height: 26
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4b76e935f9a803290800000000000000
-      internalID: -7912672128382638156
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_20
-      rect:
-        serializedVersion: 2
-        x: 316
-        y: 285
-        width: 61
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 99c6feaf17ebe18a0800000000000000
-      internalID: -6332414629285761895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_21
-      rect:
-        serializedVersion: 2
-        x: 342
-        y: 323
-        width: 37
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e4d69c9ef4e9e4e00800000000000000
-      internalID: 1030935430776319310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_22
-      rect:
-        serializedVersion: 2
-        x: 389
-        y: 323
-        width: 26
-        height: 30
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6be2a7426ca00c7a0800000000000000
-      internalID: -6359070827715350858
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_23
-      rect:
-        serializedVersion: 2
-        x: 393
-        y: 279
-        width: 54
-        height: 53
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 16af0698f6e367a00800000000000000
-      internalID: 753858636398262881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_24
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 259
-        width: 58
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4d4699e9af35e2490800000000000000
-      internalID: -7769179971299744556
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_25
-      rect:
-        serializedVersion: 2
-        x: 152
-        y: 254
-        width: 51
-        height: 55
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ffa7d8bdf202388a0800000000000000
-      internalID: -6304159663469528321
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_26
-      rect:
-        serializedVersion: 2
-        x: 307
-        y: 274
-        width: 31
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a93f24df30c44e040800000000000000
-      internalID: 4675945893135053722
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_27
-      rect:
-        serializedVersion: 2
-        x: 378
-        y: 290
-        width: 15
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 245fe93fc24658420800000000000000
-      internalID: 2631619701496542530
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_28
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 272
-        width: 15
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7a0737ccca42b33b0800000000000000
-      internalID: -5531787392711429977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_29
-      rect:
-        serializedVersion: 2
-        x: 323
-        y: 182
-        width: 111
-        height: 101
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9880086fab53be650800000000000000
-      internalID: 6263158783904581769
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_30
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 270
-        width: 25
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e94cdf384d051f160800000000000000
-      internalID: 7057510964744012958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_31
-      rect:
-        serializedVersion: 2
-        x: 437
-        y: 258
-        width: 32
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2a4eaf3d7b297e9a0800000000000000
-      internalID: -6203828643446463326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ragey_assets_32
       rect:
         serializedVersion: 2
-        x: 63
-        y: 249
-        width: 31
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 61
+        y: 241
+        width: 152
+        height: 115
+      alignment: 9
+      pivot: {x: 0.5399138, y: 0.35303795}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -983,169 +323,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ragey_assets_33
-      rect:
-        serializedVersion: 2
-        x: 115
-        y: 243
-        width: 54
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a6d9d40a3b31796a0800000000000000
-      internalID: -6442659079720690326
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_34
-      rect:
-        serializedVersion: 2
-        x: 189
-        y: 245
-        width: 24
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5edc11407201bb370800000000000000
-      internalID: 8339276894764649957
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_35
-      rect:
-        serializedVersion: 2
-        x: 447
-        y: 227
-        width: 26
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4a4ae78b67fa07800800000000000000
-      internalID: 608178874131326116
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_36
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 147
-        width: 58
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 58f24d1efe3950ab0800000000000000
-      internalID: -5042461549276156027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_37
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 185
-        width: 60
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d015b0df438d91500800000000000000
-      internalID: 367562566702682381
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_38
-      rect:
-        serializedVersion: 2
-        x: 127
-        y: 185
-        width: 31
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a0bb30160895f1470800000000000000
-      internalID: 8367505040595991306
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ragey_assets_39
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 144
-        width: 54
-        height: 47
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ddafff01c981b15e0800000000000000
-      internalID: -1937928156073690403
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ragey_assets_40
       rect:
         serializedVersion: 2
-        x: 431
-        y: 184
-        width: 24
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 306
+        y: 178
+        width: 167
+        height: 184
+      alignment: 9
+      pivot: {x: 0.47405112, y: 0.5800756}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1159,37 +345,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ragey_assets_41
-      rect:
-        serializedVersion: 2
-        x: 120
-        y: 153
-        width: 16
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ba4e897037f513510800000000000000
-      internalID: 1527106696308647083
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: ragey_assets_42
       rect:
         serializedVersion: 2
-        x: 36
-        y: 112
-        width: 171
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 37
+        y: 113
+        width: 167
+        height: 102
+      alignment: 9
+      pivot: {x: 0.5363287, y: 0.43627226}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1206,10 +370,10 @@ TextureImporter:
       name: ragey_assets_43
       rect:
         serializedVersion: 2
-        x: 442
-        y: 17
-        width: 49
-        height: 97
+        x: 443
+        y: 18
+        width: 47
+        height: 95
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1228,10 +392,10 @@ TextureImporter:
       name: ragey_assets_44
       rect:
         serializedVersion: 2
-        x: 13
-        y: 29
-        width: 52
-        height: 34
+        x: 14
+        y: 30
+        width: 50
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1250,10 +414,10 @@ TextureImporter:
       name: ragey_assets_45
       rect:
         serializedVersion: 2
-        x: 99
-        y: 31
-        width: 52
-        height: 33
+        x: 100
+        y: 32
+        width: 50
+        height: 31
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1272,10 +436,10 @@ TextureImporter:
       name: ragey_assets_46
       rect:
         serializedVersion: 2
-        x: 180
-        y: 17
-        width: 52
-        height: 52
+        x: 181
+        y: 18
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1294,10 +458,10 @@ TextureImporter:
       name: ragey_assets_47
       rect:
         serializedVersion: 2
-        x: 256
-        y: 17
-        width: 52
-        height: 52
+        x: 257
+        y: 18
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1316,10 +480,10 @@ TextureImporter:
       name: ragey_assets_48
       rect:
         serializedVersion: 2
-        x: 364
-        y: 24
-        width: 25
-        height: 48
+        x: 365
+        y: 25
+        width: 23
+        height: 46
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1338,7 +502,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 723b1f9058cc1dd469fe4aff5bb587c7
     internalID: 0
     vertices: []
     indices: 

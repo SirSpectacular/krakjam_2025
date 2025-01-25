@@ -207,11 +207,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 2
-        y: 431
-        width: 89
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 408
+        width: 255
+        height: 80
+      alignment: 9
+      pivot: {x: 0.5607474, y: 0.58801425}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,10 +228,10 @@ TextureImporter:
       name: smokey_assets_1
       rect:
         serializedVersion: 2
-        x: 90
-        y: 440
-        width: 101
-        height: 48
+        x: 328
+        y: 90
+        width: 3
+        height: 6
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,37 +247,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smokey_assets_2
-      rect:
-        serializedVersion: 2
-        x: 188
-        y: 448
-        width: 56
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1d4d3eed71f7e5580800000000000000
-      internalID: -8836485678353885999
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: smokey_assets_3
       rect:
         serializedVersion: 2
         x: 258
-        y: 431
-        width: 89
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 407
+        width: 254
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5676396, y: 0.55563354}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -291,213 +269,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smokey_assets_4
-      rect:
-        serializedVersion: 2
-        x: 347
-        y: 440
-        width: 96
-        height: 48
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: de97af7e486297e80800000000000000
-      internalID: -8180464895872304659
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_5
-      rect:
-        serializedVersion: 2
-        x: 444
-        y: 448
-        width: 56
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: cbe2cf0def9931f20800000000000000
-      internalID: 3392224264047046332
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_6
-      rect:
-        serializedVersion: 2
-        x: 34
-        y: 409
-        width: 63
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 61b3e01c0aaec9420800000000000000
-      internalID: 2638241457886870294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_7
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 426
-        width: 29
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd6afe1ee310a7080800000000000000
-      internalID: -9189030720105896229
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_8
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 411
-        width: 81
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e0e33115c149f0640800000000000000
-      internalID: 5048416556645826062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_9
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 409
-        width: 63
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 534ce594a385527e0800000000000000
-      internalID: -1790928269447609291
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_10
-      rect:
-        serializedVersion: 2
-        x: 387
-        y: 432
-        width: 29
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 76f14e949f9abd180800000000000000
-      internalID: -9089484534765576345
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_11
-      rect:
-        serializedVersion: 2
-        x: 432
-        y: 411
-        width: 80
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e7ce0fb53ba0babc0800000000000000
-      internalID: -3770908497534718850
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_12
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 302
-        width: 34
-        height: 46
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f9f427a56e745f820800000000000000
-      internalID: 2951344185496719263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: smokey_assets_13
       rect:
         serializedVersion: 2
-        x: 351
-        y: 255
-        width: 161
-        height: 76
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 258
+        y: 251
+        width: 254
+        height: 97
+      alignment: 9
+      pivot: {x: 0.5776192, y: 0.48838538}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -511,169 +291,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smokey_assets_14
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 275
-        width: 89
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: af4b295c592ca0a70800000000000000
-      internalID: 8794055170914956538
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_15
-      rect:
-        serializedVersion: 2
-        x: 290
-        y: 253
-        width: 63
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6825baa43f4442c50800000000000000
-      internalID: 6639507562371437190
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_16
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 222
-        width: 53
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7a31d32f24dcf18e0800000000000000
-      internalID: -1720430845216615513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_17
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 222
-        width: 44
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bbfb5ab58221e9d40800000000000000
-      internalID: 5592927751786315707
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_18
-      rect:
-        serializedVersion: 2
-        x: 376
-        y: 198
-        width: 100
-        height: 29
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c481b3da3819a27c0800000000000000
-      internalID: -4095300916406970292
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_19
-      rect:
-        serializedVersion: 2
-        x: 93
-        y: 134
-        width: 167
-        height: 83
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0db537eeb43e73e10800000000000000
-      internalID: 2177458860119514064
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_20
-      rect:
-        serializedVersion: 2
-        x: 295
-        y: 191
-        width: 80
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ab1b2ac275fd1ff70800000000000000
-      internalID: 9219395477708124602
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: smokey_assets_21
       rect:
         serializedVersion: 2
-        x: 365
+        x: 294
         y: 139
-        width: 111
-        height: 63
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 182
+        height: 89
+      alignment: 9
+      pivot: {x: 0.757697, y: 0.6526755}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -691,11 +317,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 5
-        y: 155
-        width: 89
-        height: 21
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 132
+        width: 257
+        height: 110
+      alignment: 9
+      pivot: {x: 0.56246644, y: 0.38222003}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -709,50 +335,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: smokey_assets_23
-      rect:
-        serializedVersion: 2
-        x: 314
-        y: 176
-        width: 68
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 93a4b19205229bb30800000000000000
-      internalID: 4303508646611601977
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: smokey_assets_24
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 133
-        width: 63
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bcfa96cedee373710800000000000000
-      internalID: 1672874978185949131
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: smokey_assets_25
       rect:
         serializedVersion: 2
@@ -761,7 +343,7 @@ TextureImporter:
         width: 29
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -783,7 +365,7 @@ TextureImporter:
         width: 42
         height: 29
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -805,7 +387,7 @@ TextureImporter:
         width: 52
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -827,7 +409,7 @@ TextureImporter:
         width: 52
         height: 64
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -849,7 +431,7 @@ TextureImporter:
         width: 26
         height: 49
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -871,7 +453,7 @@ TextureImporter:
         width: 77
         height: 91
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -888,7 +470,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 02700d0ad6e48014990d42ffcc6f5496
     internalID: 0
     vertices: []
     indices: 
