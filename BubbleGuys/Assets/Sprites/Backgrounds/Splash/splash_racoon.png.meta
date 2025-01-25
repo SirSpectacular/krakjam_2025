@@ -822,7 +822,35 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      splash_racoon_0: 7313694986949612020
+      splash_racoon_1: -8534983046187311112
+      splash_racoon_10: -5336740329039713149
+      splash_racoon_11: -6885346883817207210
+      splash_racoon_12: 3768599135279316966
+      splash_racoon_13: -386647673700535625
+      splash_racoon_14: -8271699792910387339
+      splash_racoon_15: 938000476803085594
+      splash_racoon_16: 789478692891422879
+      splash_racoon_17: 5275619591874107490
+      splash_racoon_18: 6360818896070034045
+      splash_racoon_19: -2847622247768508066
+      splash_racoon_2: -6447994986524254803
+      splash_racoon_20: 221804408439967728
+      splash_racoon_21: -2462040744279249057
+      splash_racoon_22: -8666217819194236017
+      splash_racoon_23: -1544418947803723822
+      splash_racoon_24: -1599514783677998776
+      splash_racoon_25: -6632558423177679397
+      splash_racoon_26: 549404942501850380
+      splash_racoon_27: -7969567737448229777
+      splash_racoon_3: -6490715250825264520
+      splash_racoon_4: 7950792277112774642
+      splash_racoon_5: -1595838134523911483
+      splash_racoon_6: 2930324831819601772
+      splash_racoon_7: -1620652253741849859
+      splash_racoon_8: 3786881993890200427
+      splash_racoon_9: -6171452652389583829
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
