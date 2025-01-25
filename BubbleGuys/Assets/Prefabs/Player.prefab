@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2258394230010854345}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -161,7 +161,6 @@ MonoBehaviour:
   _moveFactor: 2000
   _fartFactor: 5000
   _loseVolumeFactor: 1
-  _rigidbody: {fileID: 5293124890624716669}
   _anusPosition: {fileID: 5539191210805966300}
 --- !u!114 &2258394230010854345
 MonoBehaviour:
@@ -176,7 +175,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _player: {fileID: 7228748810261719574}
-  _circleCollider: {fileID: 2785099383615631741}
 --- !u!1 &3029443465692702893
 GameObject:
   m_ObjectHideFlags: 0

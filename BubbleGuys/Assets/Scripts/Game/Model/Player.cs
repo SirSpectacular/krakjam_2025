@@ -1,31 +1,41 @@
-using System;
+using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 namespace Game.Model
 {
     public class Player
     {
-        private float _volume;
-        public static  readonly float MinVolume = Mathf.PI / 4;
+        public readonly float BaseVolume;
+        private readonly float _baseMass;
+        public float Mass => _baseMass + PowerUps.Sum(p => p.Mass);
         public float Diameter => Mathf.Sqrt(Volume / Mathf.PI) * 2;
 
-        public float Volume
+        public List<PowerUp> PowerUps = new();
+        
+        public float Volume => BaseVolume + PowerUps.Sum(p => p.Volume);
+
+        public float SubtractVolume(float volume)
         {
-            get => _volume;
-            set
+            float volumeLeftToSubtract = volume;
+            for (int i = 0; i < PowerUps.Count; i++)
             {
-                if (_volume <= MinVolume)
-                {
-                    _volume = MinVolume;
-                    return;
-                }
-                _volume = value;
+                PowerUp powerUp = PowerUps[i];
+                float volumeToSubtract = Mathf.Min(volumeLeftToSubtract / (PowerUps.Count - i), powerUp.Volume);
+                powerUp.Mass *= (1 - (volumeToSubtract / powerUp.Volume));
+                powerUp.Volume -= volumeToSubtract;
+                volumeLeftToSubtract -= volumeToSubtract;
             }
+
+            PowerUps.RemoveAll(p => p.Volume <= Mathf.Epsilon);
+
+            return volume - volumeLeftToSubtract;
         }
         
-        public Player(float initVolume)
+        public Player(float initVolume, float initMass)
         {
-            _volume = initVolume;
+            BaseVolume = initVolume;
+            _baseMass = initMass;
         }
     }
 }
