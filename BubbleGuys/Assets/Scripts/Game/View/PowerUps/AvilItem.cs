@@ -1,9 +1,21 @@
 using UnityEngine;
+using Game.Player; // Jeśli PlayerMovement znajduje się w namespace Game.Player
 
 public class AvilItem : MonoBehaviour
 {
     private Animator _animator;
     private bool _isTriggered = false; // Zabezpieczenie przed wielokrotnym wywołaniem
+
+    [Header("Czas trwania efektu na Playerze")]
+    [SerializeField] private float effectDuration = 5f;
+
+    [Header("Mnożniki parametrów PlayerMovement")]
+    [SerializeField] private float massMultiplier = 2f;
+    [SerializeField] private float gravityScaleMultiplier = 1.5f;
+    [SerializeField] private float linearDragMultiplier = 0.5f;
+    [SerializeField] private float angularDragMultiplier = 0.5f;
+    [SerializeField] private float moveFactorMultiplier = 0.7f;
+    [SerializeField] private float rotationFactorMultiplier = 0.5f;
 
     private void Awake()
     {
@@ -13,7 +25,7 @@ public class AvilItem : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        // Sprawdzamy, czy obiekt gracza aktywował trigger (po tagu lub innym identyfikatorze)
+        // Sprawdzamy, czy gracz aktywował trigger (np. po tagu lub skrypcie PlayerMovement)
         if (!_isTriggered && collision.CompareTag("Player"))
         {
             _isTriggered = true; // Zabezpieczenie przed wielokrotnym wywołaniem
@@ -26,6 +38,25 @@ public class AvilItem : MonoBehaviour
             else
             {
                 Debug.LogWarning("[AvilItem] Animator is missing on this object!");
+            }
+
+            // Modyfikujemy parametry gracza
+            PlayerMovement playerMovement = collision.GetComponent<PlayerMovement>();
+            if (playerMovement != null)
+            {
+                playerMovement.StartCoroutine(playerMovement.ApplyAnvilEffect(
+                    effectDuration,
+                    massMultiplier,
+                    gravityScaleMultiplier,
+                    linearDragMultiplier,
+                    angularDragMultiplier,
+                    moveFactorMultiplier,
+                    rotationFactorMultiplier
+                ));
+            }
+            else
+            {
+                Debug.LogWarning("[AvilItem] PlayerMovement component not found on the Player!");
             }
 
             // Usunięcie obiektu po zakończeniu animacji
