@@ -281,10 +281,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerId: 1
-  _rotationFactor: 5000
-  _moveFactor: 2000
-  _fartFactor: 5000
-  _loseVolumeFactor: 1
+  _rotationFactor: 0
+  _moveFactor: 20
+  _fartFactor: 100
+  _loseVolumeFactor: 0.1
   _anusPosition: {fileID: 1199444809927627883}
 --- !u!114 &4840538556587088510
 MonoBehaviour:
@@ -300,7 +300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerId: 1
   _player: {fileID: 4047554106083986337}
-  _factor: 0.5
+  _factor: 0.15
 --- !u!114 &7906988262929663391
 MonoBehaviour:
   m_ObjectHideFlags: 0

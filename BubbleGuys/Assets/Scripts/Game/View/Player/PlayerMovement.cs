@@ -37,8 +37,8 @@ namespace Game.View.Player
         private void Start()
         {
             _body = GetComponentInChildren<Rigidbody2D>();
-            UnityEvent<MyDeviceState> stateToListen = MyServer.Player1;
-            stateToListen.AddListener(ServerListener);
+            UnityEvent<MyDeviceState> stateToListen = MyServer.GetPlayerDeviceState(_playerId);
+            stateToListen?.AddListener(ServerListener);
         }
 
         private void ServerListener(MyDeviceState state)

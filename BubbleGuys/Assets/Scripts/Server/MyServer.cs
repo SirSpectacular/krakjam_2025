@@ -13,10 +13,10 @@ namespace Server
     public class MyServer: WebSocketServer.WebSocketServer
     {
         [SerializeField] private List<WebSocketConnection> _playerMap = new List<WebSocketConnection>();
-        public static UnityEvent<MyDeviceState> Player1 = new UnityEvent<MyDeviceState>();
-        public static UnityEvent<MyDeviceState> Player2 = new UnityEvent<MyDeviceState>();
-        public static UnityEvent<MyDeviceState> Player3 = new UnityEvent<MyDeviceState>();
-        public static UnityEvent<MyDeviceState> Player4 = new UnityEvent<MyDeviceState>();
+        private static UnityEvent<MyDeviceState> _player1 = new UnityEvent<MyDeviceState>();
+        private static UnityEvent<MyDeviceState> _player2 = new UnityEvent<MyDeviceState>();
+        private static UnityEvent<MyDeviceState> _player3 = new UnityEvent<MyDeviceState>();
+        private static UnityEvent<MyDeviceState> _player4 = new UnityEvent<MyDeviceState>();
 
         public override void OnOpen(WebSocketConnection connection) {
             if (_playerMap.Count >= 4)
@@ -62,7 +62,6 @@ namespace Server
         private void OnUpdateMove(int playerNo, JoystickMove move)
         {   
             Vector2 normalizedVector = move.move.normalized;
-            Debug.Log("(X,Y) = (" + normalizedVector.x +"," + normalizedVector.y + ")");
             
             MyDeviceState state = new MyDeviceState();
             state.MoveVector = normalizedVector;
@@ -70,16 +69,16 @@ namespace Server
             switch (playerNo)
             {
                 case 1:
-                    Player1.Invoke(state);
+                    _player1.Invoke(state);
                     break;
                 case 2:
-                    Player2.Invoke(state);
+                    _player2.Invoke(state);
                     break;
                 case 3:
-                    Player3.Invoke(state);
+                    _player3.Invoke(state);
                     break;
                 case 4:
-                    Player4.Invoke(state);
+                    _player4.Invoke(state);
                     break;
             }
         }
@@ -92,16 +91,16 @@ namespace Server
             switch (playerNo)
             {
                 case 1:
-                    Player1.Invoke(state);
+                    _player1.Invoke(state);
                     break;
                 case 2:
-                    Player2.Invoke(state);
+                    _player2.Invoke(state);
                     break;
                 case 3:
-                    Player3.Invoke(state);
+                    _player3.Invoke(state);
                     break;
                 case 4:
-                    Player4.Invoke(state);
+                    _player4.Invoke(state);
                     break;
             }
         }
@@ -122,6 +121,23 @@ namespace Server
             }
            
             return 0;
+        }
+
+        public static UnityEvent<MyDeviceState> GetPlayerDeviceState(int playerId)
+        {
+            switch (playerId)
+            {
+                case 1:
+                    return _player1;
+                case 2:
+                    return _player2;
+                case 3:
+                    return _player3;
+                case 4:
+                    return _player4;
+                default:
+                    return null;
+            }
         }
     }
 }
