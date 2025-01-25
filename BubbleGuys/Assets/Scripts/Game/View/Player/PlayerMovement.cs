@@ -1,6 +1,7 @@
 using Game.Controller;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using System.Collections;  // ← ważne, żeby dodać to dla IEnumerator
 
 namespace Game.Player
 {
@@ -56,12 +57,11 @@ namespace Game.Player
             {
                 return;
             }
-        
-        
+
             Vector2 force = _moveDirection * _moveFactor * Time.deltaTime;
             _rigidbody.AddForce(force);
         }
-    
+
         private void CheckFart()
         {
             if (_isFarting == false)
@@ -80,6 +80,63 @@ namespace Game.Player
             Vector2 force = fartDirection * _fartFactor * Time.deltaTime;
             player.Volume -= Time.deltaTime * _loseVolumeFactor;
             _rigidbody.AddForce(force);
+        }
+
+        // --------------------------------------------------------------------
+        // DODAJEMY PUBLICZNĄ METODĘ: czasowa modyfikacja parametrów "jak kowadło"
+        // --------------------------------------------------------------------
+        /// <summary>
+        /// Na określony czas modyfikuje właściwości Rigidbody2D i współczynniki ruchu,
+        /// tak aby postać była cięższa/trudniejsza do zatrzymania.
+        /// </summary>
+        public IEnumerator ApplyAnvilEffect(
+            float duration,
+            float massMultiplier,
+            float gravityScaleMultiplier,
+            float linearDragMultiplier,
+            float angularDragMultiplier,
+            float moveFactorMultiplier,
+            float rotationFactorMultiplier
+            // możesz dodać loseVolumeFactorMultiplier, jeśli chcesz to też zmieniać
+        )
+        {
+            // 1) Zapamiętujemy oryginalne wartości
+            float originalMass = _rigidbody.mass;
+            float originalGravity = _rigidbody.gravityScale;
+            float originalDrag = _rigidbody.linearDamping;
+            float originalAngularDrag = _rigidbody.angularDamping;
+
+            float originalMoveFactor = _moveFactor;
+            float originalRotationFactor = _rotationFactor;
+            float originalLoseVolumeFactor = _loseVolumeFactor; // jeśli chcesz zmieniać
+
+            // 2) Modyfikujemy wartości
+            _rigidbody.mass *= massMultiplier;
+            _rigidbody.gravityScale *= gravityScaleMultiplier;
+            _rigidbody.linearDamping *= linearDragMultiplier;
+            _rigidbody.angularDamping *= angularDragMultiplier;
+
+            _moveFactor *= moveFactorMultiplier;
+            _rotationFactor *= rotationFactorMultiplier;
+            // _loseVolumeFactor *= ... (w razie potrzeby)
+
+            // (Opcjonalnie) wyświetl w konsoli, że efekt się zaczął
+            Debug.Log($"[PlayerMovement] AnvilEffect START, mass={_rigidbody.mass}, moveFactor={_moveFactor}");
+
+            // 3) Odczekaj "duration" sekund
+            yield return new WaitForSeconds(duration);
+
+            // 4) Przywracamy oryginały
+            _rigidbody.mass = originalMass;
+            _rigidbody.gravityScale = originalGravity;
+            _rigidbody.linearDamping = originalDrag;
+            _rigidbody.angularDamping = originalAngularDrag;
+
+            _moveFactor = originalMoveFactor;
+            _rotationFactor = originalRotationFactor;
+            // _loseVolumeFactor = originalLoseVolumeFactor; // w razie potrzeby
+
+            Debug.Log("[PlayerMovement] AnvilEffect END (przywrócone wartości).");
         }
     }
 }
