@@ -1,0 +1,59 @@
+{
+    "name": "@rbuljan/gamepad",
+    "version": "2.0.3-b",
+    "description": "Multi-touch gamepad with buttons and joystick for JavaScript games, apps, IOT",
+    "main": "dist/gamepad.js",
+    "types": "dist/gamepad.ts",
+    "type": "module",
+    "scripts": {
+        "start": "npm run dev",
+        "dev": "vite --open",
+        "build": "tsc -p .",
+        "lint": "tsc"
+    },
+    "files": [
+        "dist/",
+        "src/"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/rokobuljan/gamepad.git"
+    },
+    "keywords": [
+        "Gamepad",
+        "Joystick",
+        "Controller",
+        "Touch",
+        "Games",
+        "Ui",
+        "Responsive",
+        "IOT",
+        "clean",
+        "easy to use"
+    ],
+    "author": {
+        "name": "rbuljan",
+        "url": "https://github.com/rokobuljan/"
+    },
+    "contributors": [
+        {
+            "name": "Gregor Altstädt",
+            "url": "https://github.com/gdur/"
+        }
+    ],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/rokobuljan/gamepad/issues"
+    },
+    "homepage": "https://github.com/rokobuljan/gamepad#readme",
+    "devDependencies": {
+        "sass": "^1.83.4",
+        "typescript": "^5.7.3",
+        "vite": "^6.0.11"
+    },
+    "dependencies": {
+        "isomorphic-ws": "^5.0.0",
+        "socket.io-client": "^4.8.1",
+        "ws": "^8.18.0"
+    }
+}
