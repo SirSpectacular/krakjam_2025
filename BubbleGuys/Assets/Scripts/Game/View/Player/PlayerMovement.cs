@@ -35,10 +35,6 @@ namespace Game.View.Player
         public void OnAttack(InputValue value)
         {
             _isFarting = value.Get<float>() > 0;
-            if (_isFartingObj.activeSelf != _isFarting)
-            {
-                _isFartingObj.SetActive(_isFarting);
-            }
         }
 
         private void Start()
@@ -90,15 +86,27 @@ namespace Game.View.Player
         {
             if (_isFarting == false)
             {
+                if (_isFartingObj.activeSelf)
+                {
+                    _isFartingObj.SetActive(false);
+                }
                 return;
             }
             
             Model.Player player = DataProvider.Instance.GetPlayer(_playerId);
             if (player.Volume - player.BaseVolume <= Mathf.Epsilon)
             {
-                //Not enough volume to fart;
+                if (_isFartingObj.activeSelf)
+                {
+                    _isFartingObj.SetActive(false);
+                }
                 return;
             }
+            if (_isFartingObj.activeSelf != true)
+            {
+                _isFartingObj.SetActive(true);
+            }
+            
 
             Vector2 fartDirection = -(_anusPosition.position - transform.position).normalized;
             Vector2 force = fartDirection * _fartFactor;
