@@ -36,7 +36,7 @@ namespace Game.Controller
         
         private void Awake()
         {
-            for (int i = 1; i <= 4; i++)
+            for (int i = 1; i <= 3; i++)
             {
                 Model.Player player = new(_playerVolume, _playerDensity * _playerVolume);
                 _players.Add(i, player);
@@ -46,7 +46,7 @@ namespace Game.Controller
 
         private void Start()
         {
-            for (int i = 1; i <= 4; i++)
+            for (int i = 1; i <= 3; i++)
             {
                 PlayerPowerUps.Instance.AddAir(i, InitialAir);
             }  

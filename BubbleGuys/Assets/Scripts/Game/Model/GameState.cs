@@ -5,7 +5,6 @@ namespace Game.Model
         public bool IsStarted { get; private set; }
         public bool IsFinished { get; private set; }
         public int? WinnerId;
-        public bool IsWin => WinnerId != null;
 
         public void Start()
         {
