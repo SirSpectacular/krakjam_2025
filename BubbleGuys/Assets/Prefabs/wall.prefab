@@ -50,7 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rigidbody: {fileID: 4765052915427806842}
-  _forwardSpeed: 1.5
+  _forwardSpeed: 2.25
 --- !u!50 &4765052915427806842
 Rigidbody2D:
   serializedVersion: 5
