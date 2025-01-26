@@ -13,6 +13,7 @@ namespace Game.View.Player
 {
     public class PlayerMovement : MonoBehaviour
     {
+        [SerializeField] public GameObject _isFartingObj;
         [SerializeField] public PlayerIdProvider _playerId;
         [SerializeField] public TextMeshPro _userName;
         [SerializeField] private float _rotationFactor;
@@ -34,6 +35,10 @@ namespace Game.View.Player
         public void OnAttack(InputValue value)
         {
             _isFarting = value.Get<float>() > 0;
+            if (_isFartingObj.activeSelf != _isFarting)
+            {
+                _isFartingObj.SetActive(_isFarting);
+            }
         }
 
         private void Start()
