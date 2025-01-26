@@ -9,7 +9,7 @@ namespace Game.View.Player
         [Tooltip("The desired world scale for this object (X, Y, Z).")]
         public Vector3 targetWorldScale = Vector3.one;
 
-        private void OnValidate()
+        private void OnReset()
         {
             targetWorldScale = transform.lossyScale;
         }

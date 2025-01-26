@@ -353,6 +353,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8768306717689029807, guid: f0d58801d0a614b448df6e9a1cd3a796, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 8534566991629895962, guid: f0d58801d0a614b448df6e9a1cd3a796, type: 3}
@@ -483,6 +487,10 @@ PrefabInstance:
     - target: {fileID: 5725702356841104343, guid: f0d58801d0a614b448df6e9a1cd3a796, type: 3}
       propertyPath: targetWorldScale.z
       value: 0.00039999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768306717689029807, guid: f0d58801d0a614b448df6e9a1cd3a796, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -792,6 +800,10 @@ PrefabInstance:
     - target: {fileID: 5725702356841104343, guid: f0d58801d0a614b448df6e9a1cd3a796, type: 3}
       propertyPath: targetWorldScale.z
       value: 0.00039999996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8768306717689029807, guid: f0d58801d0a614b448df6e9a1cd3a796, type: 3}
+      propertyPath: m_text
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
