@@ -371,14 +371,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.028243948
       objectReference: {fileID: 0}
-    - target: {fileID: 3502097269514508356, guid: e0a7e1aceabfbe345bcbf9be64bf5adb, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 3502097269514508356, guid: e0a7e1aceabfbe345bcbf9be64bf5adb, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.9
-      objectReference: {fileID: 0}
     - target: {fileID: 3538616399530970178, guid: e0a7e1aceabfbe345bcbf9be64bf5adb, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.006973815
@@ -713,7 +705,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8159225328762850634, guid: e0a7e1aceabfbe345bcbf9be64bf5adb, type: 3}
       propertyPath: _helliumPowerUpConfig.Density
-      value: 0.02
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 8242651826672667173, guid: e0a7e1aceabfbe345bcbf9be64bf5adb, type: 3}
       propertyPath: m_LocalScale.x
@@ -1191,7 +1183,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 815365148470666890, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
       propertyPath: orthographic size
-      value: 3
+      value: 3.9175484
       objectReference: {fileID: 0}
     - target: {fileID: 2188697983654191553, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
       propertyPath: m_Name
