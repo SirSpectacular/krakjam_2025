@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace Game.View.Player
 {
+    [ExecuteInEditMode]
     public class MaintainWorldScale : MonoBehaviour
     {
         [Tooltip("The desired world scale for this object (X, Y, Z).")]

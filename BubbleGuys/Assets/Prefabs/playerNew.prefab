@@ -195,7 +195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _playerId: 1
   _rotationFactor: 0
-  _moveFactor: 35
+  _moveFactor: 65
   _fartFactor: 100
   _loseVolumeFactor: 0.1
   _anusPosition: {fileID: 1199444809927627883}
