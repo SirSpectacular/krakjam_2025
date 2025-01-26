@@ -1,13 +1,18 @@
+
 using System;
 using UnityEngine;
 
 namespace Game.View.Player
 {
-    [ExecuteInEditMode]
     public class MaintainWorldScale : MonoBehaviour
     {
         [Tooltip("The desired world scale for this object (X, Y, Z).")]
         public Vector3 targetWorldScale = Vector3.one;
+
+        private void OnValidate()
+        {
+            targetWorldScale = transform.lossyScale;
+        }
 
         private void Awake()
         {
