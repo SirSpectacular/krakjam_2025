@@ -162,7 +162,7 @@ const engine = () => {
 
 engine();
 
-const socket = new WebSocket("ws://172.97.3.225:8080");
+const socket = new WebSocket("ws://172.97.3.219:8080");
 
 let username = localStorage.getItem('username')
 

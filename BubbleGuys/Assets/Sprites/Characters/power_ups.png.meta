@@ -1,76 +1,43 @@
 fileFormatVersion: 2
-guid: 5f8f807546565784e83f24e42a351232
+guid: bf4c556897728324083946b7d27b770a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1745626082509944143
-    second: dr_assets_0
+      213: 1940109571199543834
+    second: power_ups_0
   - first:
-      213: -4712071043084796642
-    second: dr_assets_1
+      213: -7455115009089462100
+    second: power_ups_1
   - first:
-      213: 5552828714538295366
-    second: dr_assets_2
+      213: -8766760300750425805
+    second: power_ups_2
   - first:
-      213: -5073096245997684085
-    second: dr_assets_3
+      213: 561012592524298815
+    second: power_ups_3
   - first:
-      213: 459385325235811032
-    second: dr_assets_4
+      213: -8754871809411429889
+    second: power_ups_4
   - first:
-      213: -6496753958611676907
-    second: dr_assets_5
+      213: -2557842959246193320
+    second: power_ups_5
   - first:
-      213: 3587101995402343675
-    second: dr_assets_6
+      213: -2195591944404442990
+    second: power_ups_6
   - first:
-      213: 4112150912781063386
-    second: dr_assets_7
+      213: -474765350877723889
+    second: power_ups_7
   - first:
-      213: -6844767978338843049
-    second: dr_assets_8
+      213: -6296640202433610551
+    second: power_ups_8
   - first:
-      213: 6628070904334018434
-    second: dr_assets_9
+      213: 7431075753180288155
+    second: power_ups_9
   - first:
-      213: -4606553928370174645
-    second: dr_assets_10
+      213: 3330855670068451809
+    second: power_ups_10
   - first:
-      213: 6061162437519351993
-    second: dr_assets_11
-  - first:
-      213: -8670404008849286019
-    second: dr_assets_12
-  - first:
-      213: 1684436959207329660
-    second: dr_assets_13
-  - first:
-      213: -306103860740444692
-    second: dr_assets_14
-  - first:
-      213: 8113610002461827965
-    second: dr_assets_15
-  - first:
-      213: 8759435936619359440
-    second: dr_assets_16
-  - first:
-      213: -2619669595797990933
-    second: dr_assets_17
-  - first:
-      213: 2550378375085398431
-    second: dr_assets_18
-  - first:
-      213: -1010884173939113024
-    second: dr_assets_19
-  - first:
-      213: -4818598236468478651
-    second: dr_assets_20
-  - first:
-      213: 8616800084652420225
-    second: dr_assets_21
-  - first:
-      213: -6754467226706961754
-    second: dr_assets_22
+      213: -7897549000521553217
+    second: power_ups_11
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -179,243 +146,265 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: dr_assets_7
+      name: power_ups_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 408
-        width: 125
-        height: 62
+        x: 72
+        y: 757
+        width: 418
+        height: 424
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad41d13d77b411930800000000000000
-      internalID: 4112150912781063386
+      spriteID: a1a2fa83067acea10800000000000000
+      internalID: 1940109571199543834
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dr_assets_8
+      name: power_ups_1
       rect:
         serializedVersion: 2
-        x: 177
-        y: 407
-        width: 126
-        height: 66
+        x: 531
+        y: 742
+        width: 418
+        height: 424
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7560521f9cf7201a0800000000000000
-      internalID: -6844767978338843049
+      spriteID: ca02a8be56c1a8890800000000000000
+      internalID: -7455115009089462100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dr_assets_9
+      name: power_ups_2
       rect:
         serializedVersion: 2
-        x: 304
-        y: 350
-        width: 189
-        height: 138
+        x: 1002
+        y: 742
+        width: 418
+        height: 424
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2876ee6de53abfb50800000000000000
-      internalID: 6628070904334018434
+      spriteID: 33136ca64f5365680800000000000000
+      internalID: -8766760300750425805
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dr_assets_13
+      name: power_ups_3
       rect:
         serializedVersion: 2
-        x: 252
-        y: 183
-        width: 148
-        height: 143
+        x: 1530
+        y: 742
+        width: 418
+        height: 424
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c7f87186d72506710800000000000000
-      internalID: 1684436959207329660
+      spriteID: f3a8ee30bfd19c700800000000000000
+      internalID: 561012592524298815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dr_assets_16
+      name: power_ups_4
       rect:
         serializedVersion: 2
-        x: 38
-        y: 192
-        width: 150
-        height: 119
+        x: 72
+        y: 271
+        width: 154
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0dcecfa2394cf8970800000000000000
-      internalID: 8759435936619359440
+      spriteID: ff943f18972708680800000000000000
+      internalID: -8754871809411429889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dr_assets_17
+      name: power_ups_5
       rect:
         serializedVersion: 2
-        x: 38
-        y: 30
-        width: 57
-        height: 74
+        x: 98
+        y: 89
+        width: 422
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: be1d199d16015abd0800000000000000
-      internalID: -2619669595797990933
+      spriteID: 85d85ee6167b08cd0800000000000000
+      internalID: -2557842959246193320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dr_assets_18
+      name: power_ups_6
       rect:
         serializedVersion: 2
-        x: 120
-        y: 38
-        width: 44
-        height: 57
+        x: 560
+        y: 271
+        width: 154
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: f999dc1ae93c46320800000000000000
-      internalID: 2550378375085398431
+      spriteID: 290601262c0b781e0800000000000000
+      internalID: -2195591944404442990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dr_assets_19
+      name: power_ups_7
       rect:
         serializedVersion: 2
-        x: 204
-        y: 25
-        width: 51
-        height: 92
+        x: 586
+        y: 89
+        width: 422
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0c38b4f133e98f1f0800000000000000
-      internalID: -1010884173939113024
+      spriteID: f030545cd6b4969f0800000000000000
+      internalID: -474765350877723889
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dr_assets_20
+      name: power_ups_8
       rect:
         serializedVersion: 2
-        x: 282
-        y: 28
-        width: 45
-        height: 80
+        x: 1047
+        y: 271
+        width: 154
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54df8f71f66e02db0800000000000000
-      internalID: -4818598236468478651
+      spriteID: 9cc308fc817dd98a0800000000000000
+      internalID: -6296640202433610551
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dr_assets_21
+      name: power_ups_9
       rect:
         serializedVersion: 2
-        x: 367
-        y: 25
-        width: 26
-        height: 49
+        x: 1073
+        y: 89
+        width: 422
+        height: 432
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 18c6342f506059770800000000000000
-      internalID: 8616800084652420225
+      spriteID: b945457a60c702760800000000000000
+      internalID: 7431075753180288155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: dr_assets_22
+      name: power_ups_10
       rect:
         serializedVersion: 2
-        x: 444
-        y: 30
-        width: 40
-        height: 70
+        x: 1558
+        y: 272
+        width: 154
+        height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6aa1d1118df4342a0800000000000000
-      internalID: -6754467226706961754
+      spriteID: 1e996849593993e20800000000000000
+      internalID: 3330855670068451809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: power_ups_11
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 90
+        width: 422
+        height: 432
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbaebabe605466290800000000000000
+      internalID: -7897549000521553217
       vertices: []
       indices: 
       edges: []
@@ -424,7 +413,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 86479ae8d68618c4890315340a98ed93
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -433,30 +422,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      dr_assets_0: -1745626082509944143
-      dr_assets_1: -4712071043084796642
-      dr_assets_10: -4606553928370174645
-      dr_assets_11: 6061162437519351993
-      dr_assets_12: -8670404008849286019
-      dr_assets_13: 1684436959207329660
-      dr_assets_14: -306103860740444692
-      dr_assets_15: 8113610002461827965
-      dr_assets_16: 8759435936619359440
-      dr_assets_17: -2619669595797990933
-      dr_assets_18: 2550378375085398431
-      dr_assets_19: -1010884173939113024
-      dr_assets_2: 5552828714538295366
-      dr_assets_20: -4818598236468478651
-      dr_assets_21: 8616800084652420225
-      dr_assets_22: -6754467226706961754
-      dr_assets_3: -5073096245997684085
-      dr_assets_4: 459385325235811032
-      dr_assets_5: -6496753958611676907
-      dr_assets_6: 3587101995402343675
-      dr_assets_7: 4112150912781063386
-      dr_assets_8: -6844767978338843049
-      dr_assets_9: 6628070904334018434
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
