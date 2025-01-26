@@ -1260,6 +1260,10 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 3.9175484
       objectReference: {fileID: 0}
+    - target: {fileID: 837981197638435377, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2188697983654191553, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -1302,6 +1306,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2700356916317919261, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241505583943222320, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_Color.b
+      value: 0.6830188
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241505583943222320, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_Color.g
+      value: 0.6830188
+      objectReference: {fileID: 0}
+    - target: {fileID: 4241505583943222320, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_Color.r
+      value: 0.6830188
+      objectReference: {fileID: 0}
+    - target: {fileID: 6280133302437456994, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7724183208717180103, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7754580067452102877, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7859444120610597211, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
