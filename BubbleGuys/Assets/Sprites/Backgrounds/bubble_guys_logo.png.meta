@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bubble_guys_logo_0: -148219832605978290
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

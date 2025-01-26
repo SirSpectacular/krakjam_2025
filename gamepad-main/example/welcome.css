@@ -4,7 +4,6 @@
 .dark-green-color { color: #4D6F50; }
 .dark-green-bg-color { background-color: #4D6F50; }
 .white-color { color: #fff; }
-.padding-top-100px {padding-top: 100px;}
 .margin-bottom-25px {margin-bottom: 25px;}
 
 body {
@@ -15,11 +14,16 @@ body {
     background-color: #4D6F50;
     height: 100vh;
     position: relative;
+    display: flex;
+    background-image: url("bubbles.png");
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 .login-form {
     max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    margin: auto;
+    position: relative;
 }
 .login-form .hint-text {
     color: #fff;
