@@ -147,7 +147,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      bubbleguys-splash-moc_0: -3979991101959879268
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -222,7 +222,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      splash_pink_0: 1011494478152753739
+      splash_pink_1: 153020416888086104
+      splash_pink_2: -4960901341108123247
+      splash_pink_3: 6418338784778217347
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
