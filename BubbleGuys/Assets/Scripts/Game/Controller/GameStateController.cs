@@ -21,11 +21,11 @@ namespace Game.Controller
             GameState gameState = DataProvider.Instance.GameState;
             if (gameState.IsFinished)
             {
-                Time.timeScale = 1.0f;
+                Time.timeScale = 0.0f;
             }
             else if(gameState.IsStarted)
             {
-                Time.timeScale = 0.0f;
+                Time.timeScale = 1.0f;
             }
         }
     }
