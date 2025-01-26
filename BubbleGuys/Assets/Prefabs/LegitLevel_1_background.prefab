@@ -5209,7 +5209,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _rocksPowerUpConfig:
-    Density: 10
+    Density: 8
     ParticleShape: {fileID: 0}
   _airPowerUpConfig:
     Density: 1

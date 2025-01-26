@@ -704,6 +704,10 @@ PrefabInstance:
       value: 0.0327466
       objectReference: {fileID: 0}
     - target: {fileID: 8159225328762850634, guid: e0a7e1aceabfbe345bcbf9be64bf5adb, type: 3}
+      propertyPath: _rocksPowerUpConfig.Density
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 8159225328762850634, guid: e0a7e1aceabfbe345bcbf9be64bf5adb, type: 3}
       propertyPath: _helliumPowerUpConfig.Density
       value: 0.5
       objectReference: {fileID: 0}
