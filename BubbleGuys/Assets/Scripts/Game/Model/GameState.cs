@@ -2,7 +2,7 @@ namespace Game.Model
 {
     public class GameState
     {
-        public bool IsStarted { get; private set; } = true;
+        public bool IsStarted { get; private set; }
         public bool IsFinished { get; private set; }
         public int? WinnerId;
         public bool IsWin => WinnerId != null;

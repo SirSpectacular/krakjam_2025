@@ -6,6 +6,7 @@ namespace Game.Controller
 {
     public class GameStateController : MonoBehaviour
     {
+        [SerializeField] private GameObject _finishPanel;
         private void Awake()
         {
             Time.timeScale = 0.0f;
@@ -13,7 +14,7 @@ namespace Game.Controller
 
         private void Update()
         {
-            if (DataProvider.Instance == null)
+            if (DataProvider.Instance == null || _finishPanel.activeSelf)
             {
                 return;
             }
@@ -22,6 +23,7 @@ namespace Game.Controller
             if (gameState.IsFinished)
             {
                 Time.timeScale = 0.0f;
+                _finishPanel.SetActive(true);
             }
             else if(gameState.IsStarted)
             {

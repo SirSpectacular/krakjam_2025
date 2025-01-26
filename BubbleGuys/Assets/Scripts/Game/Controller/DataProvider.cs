@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Game.Model;
 using UnityEngine;
 
@@ -22,6 +23,15 @@ namespace Game.Controller
         public Model.Player GetPlayer(int playerId)
         {
             return _players[playerId];
+        }
+        
+        public void KillPlayer(int playerId)
+        {
+            GetPlayer(playerId).Kill();
+            if (_players.Values.All(p => p.IsAlive == false))
+            {
+                GameState.Finish(null);
+            }
         }
         
         private void Awake()

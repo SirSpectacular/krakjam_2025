@@ -15,6 +15,6 @@ public class WallOfDeathView : MonoBehaviour
     [UsedImplicitly]
     public void OnPlayerEntered(int playerId)
     {
-        DataProvider.Instance.GetPlayer(playerId).Kill();
+        DataProvider.Instance.KillPlayer(playerId);
     }
 }
