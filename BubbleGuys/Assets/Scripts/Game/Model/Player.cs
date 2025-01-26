@@ -6,14 +6,20 @@ namespace Game.Model
 {
     public class Player
     {
+        public bool IsAlive { get; private set; } = true;
         public readonly float BaseVolume;
         private readonly float _baseMass;
         public float Mass => _baseMass + PowerUps.Sum(p => p.Mass);
         public float Diameter => Mathf.Sqrt(Volume / Mathf.PI) * 2;
 
-        public List<PowerUp> PowerUps = new();
+        public readonly List<PowerUp> PowerUps = new();
         
         public float Volume => BaseVolume + PowerUps.Sum(p => p.Volume);
+
+        public void Kill()
+        {
+            IsAlive = false;
+        }
 
         public float SubtractVolume(float volume)
         {

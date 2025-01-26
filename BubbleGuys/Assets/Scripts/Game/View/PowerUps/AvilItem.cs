@@ -18,13 +18,13 @@ public class AvilItem : MonoBehaviour
             return;
         }
 
-        PlayerMovement playerMovement = collision.GetComponentInParent<PlayerMovement>();
-        if (playerMovement == null)
+        PlayerIdProvider idProvider = collision.GetComponentInParent<PlayerIdProvider>();
+        if (idProvider == null)
         {
             return;
         }
         _isTriggered = true;
-        int playerId = playerMovement._playerId;
+        int playerId = idProvider;
         _animator.SetTrigger("Disappear");
         switch (_type)
         {

@@ -1,12 +1,13 @@
 using System;
 using Game.Controller;
+using Game.View.Player;
 using UnityEngine;
 
 namespace Game.Player
 {
     public class PlayerScale : MonoBehaviour
     {
-        [SerializeField] private int _playerId;
+        [SerializeField] private PlayerIdProvider _playerId;
         [SerializeField] private Transform _player;
         [SerializeField] private float _factor = 0.5f;
         

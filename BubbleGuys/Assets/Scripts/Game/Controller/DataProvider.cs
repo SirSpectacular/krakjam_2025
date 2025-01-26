@@ -15,6 +15,8 @@ namespace Game.Controller
         private static DataProvider _instance; 
         public static DataProvider Instance => _instance;
 
+        public GameState GameState = new();
+
         private readonly Dictionary<int, Model.Player> _players = new();
 
         public Model.Player GetPlayer(int playerId)
