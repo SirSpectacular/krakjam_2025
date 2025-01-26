@@ -13,7 +13,7 @@ namespace Game.View.Player
 {
     public class PlayerMovement : MonoBehaviour
     {
-        [SerializeField] public int _playerId;
+        [SerializeField] public PlayerIdProvider _playerId;
         [SerializeField] public TextMeshPro _userName;
         [SerializeField] private float _rotationFactor;
         [SerializeField] private float _moveFactor;

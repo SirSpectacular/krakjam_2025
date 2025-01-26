@@ -11,7 +11,7 @@ namespace Game.View.Player
         [SerializeField] private PhysicsMaterial2D _bouncy;
         [SerializeField] private PhysicsMaterial2D _stiff;
         
-        [SerializeField] private int _playerId = 1;
+        [SerializeField] private PlayerIdProvider _playerId;
         [SerializeField] private Rigidbody2D _rigidbody;
 
         public void FixedUpdate()
