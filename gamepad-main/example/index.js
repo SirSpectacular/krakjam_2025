@@ -1,5 +1,6 @@
 import "./style.css";
 import { Gamepad, Button, Joystick } from "../src/gamepad";
+import Cookies from 'js-cookie'
 
 const ELNew = (tag, prop) => Object.assign(document.createElement(tag), prop);
 const EL = (sel, PAR) => (PAR || document).querySelector(sel);
@@ -163,6 +164,12 @@ engine();
 
 const socket = new WebSocket("ws://172.97.3.225:8080");
 
+let username = localStorage.getItem('username')
+
+waitForSocketConnection(socket, function(){
+    socket.send("Name_"+username);
+});
+
 socket.addEventListener("open", (event) => {
     socket.send("Hello Server!");
 });
@@ -186,7 +193,9 @@ const GP = new Gamepad([
         onInput(state) {
             PL.controller.value = state.value;
             PL.controller.angle = state.angle;
-            socket.send("Move_"+state.value+"_"+state.angle);
+            waitForSocketConnection(socket, function(){
+                socket.send("Move_"+state.value+"_"+state.angle);
+            });
         },
     }),
     new Button({
@@ -203,7 +212,9 @@ const GP = new Gamepad([
                 return;
             }
             GP.vibrate([100]);
-            socket.send("Action");
+            waitForSocketConnection(socket, function(){
+                socket.send("Action");
+            });
         },
     }),
 ]);
@@ -238,4 +249,19 @@ const GP = new Gamepad([
 
 document.ondblclick = function(e) {
     e.preventDefault();
+}
+
+// Make the function wait until the connection is made...
+function waitForSocketConnection(socket, callback){
+    setTimeout(
+        function () {
+            if (socket.readyState === 1) {
+                if (callback != null){
+                    callback();
+                }
+            } else {
+                waitForSocketConnection(socket, callback);
+            }
+
+        }, 5); // wait 5 milisecond for the connection...
 }

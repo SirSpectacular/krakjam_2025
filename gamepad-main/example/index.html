@@ -1,24 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0"
-            user-scalable="no"
-        />
-        <link rel="shortcut icon" href="#!" type="image/x-icon" />
-        <title>Gamepad</title>
-    </head>
+<html>
+<head>
+    <title>Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <body>
-        <div id="app">
-            <div id="app-left"></div>
-            <div id="app-right"></div>
-            <div id="app-menu"></div>
-        </div>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <script type="module" src="./index.js"></script>
-    </body>
+    <link rel="stylesheet" type="text/css" href="welcome.css">
+</head>
+<body>
+<div id="loginContainer">
+    <div class="login-form">
+        <form action="" method="post" id="form">
+            <div class="text-center padding-top-100px">
+                <img class="mx-auto d-block margin-bottom-25px" width="100px" src="player.jpeg" >
+            </div>
+
+            <!-- <h1 class="text-center light-green-color margin-bottom-25px">NEAT</h1> -->
+            <div class="form-group ">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input id="username" type="text" name="username" class="form-control" placeholder="username" required="required">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-success btn-block">
+                    <a href="#" class="light-green-color">Join</a>
+                </button>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+
+
+<!-- jQuery and Bootstrap JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<script type="module" src="./welcome.js"></script>
+</body>
 </html>

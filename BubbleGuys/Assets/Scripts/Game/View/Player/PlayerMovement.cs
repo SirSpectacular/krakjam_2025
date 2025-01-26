@@ -2,6 +2,7 @@ using System.Collections;
 using Game.Controller;
 using Input;
 using Server;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -13,6 +14,7 @@ namespace Game.View.Player
     public class PlayerMovement : MonoBehaviour
     {
         [SerializeField] public int _playerId;
+        [SerializeField] public TextMeshPro _userName;
         [SerializeField] private float _rotationFactor;
         [SerializeField] private float _moveFactor;
         [SerializeField] private float _fartFactor;
@@ -45,6 +47,10 @@ namespace Game.View.Player
         {
             _moveDirection = state.MoveVector;
             _isFarting = state.ButtonClicked;
+            if (string.IsNullOrEmpty(state.UserName) == false)
+            {
+                _userName.text = state.UserName;
+            }
         }
 
         void FixedUpdate()

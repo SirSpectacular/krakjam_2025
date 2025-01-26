@@ -10,5 +10,6 @@ namespace Input
     {
         public Vector2 MoveVector;
         public bool ButtonClicked;
+        public string UserName;
     }
 }

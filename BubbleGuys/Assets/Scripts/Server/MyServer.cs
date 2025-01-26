@@ -36,7 +36,15 @@ namespace Server
             {
                 return;
             }
-            
+
+            if (message.data.StartsWith("Name_"))
+            {
+                string[] split = message.data.Split("_");
+                if (split.Length == 2)
+                {
+                    OnUpdateUserName(playerNo, split[1]);
+                }
+            }
             if (message.data.StartsWith("Move_"))
             {
                 string[] split = message.data.Split("_");
@@ -87,6 +95,28 @@ namespace Server
         {
             MyDeviceState state = new MyDeviceState();
             state.ButtonClicked = true;
+            
+            switch (playerNo)
+            {
+                case 1:
+                    _player1.Invoke(state);
+                    break;
+                case 2:
+                    _player2.Invoke(state);
+                    break;
+                case 3:
+                    _player3.Invoke(state);
+                    break;
+                case 4:
+                    _player4.Invoke(state);
+                    break;
+            }
+        }
+        
+        private void OnUpdateUserName(int playerNo, string username)
+        {
+            MyDeviceState state = new MyDeviceState();
+            state.UserName = username;
             
             switch (playerNo)
             {
