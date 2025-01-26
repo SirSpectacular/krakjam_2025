@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 10f9b5bb1fc38dc41b8a0cfb9b1d6fab
+guid: d41267d8d4753a941ab852bdf2fd6bc2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6188069379237858014
-    second: hills_bg_0
+      213: -1843197933104017171
+    second: square_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -113,13 +113,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hills_bg_0
+      name: square_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2921
-        height: 2864
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: edac1fa805070e550800000000000000
-      internalID: 6188069379237858014
+      spriteID: de0d99ade35ab66e0800000000000000
+      internalID: -1843197933104017171
       vertices: []
       indices: 
       edges: []
