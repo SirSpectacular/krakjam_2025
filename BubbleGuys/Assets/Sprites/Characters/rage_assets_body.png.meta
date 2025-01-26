@@ -173,6 +173,33 @@ TextureImporter:
         color:
           serializedVersion: 2
           rgba: 4294901760
+      - name: bone_6
+        guid: f45da453cee1a304bbb5067c771fbe5c
+        position: {x: 211.95702, y: 15.598546, z: 0}
+        rotation: {x: 0, y: 0, z: 0.6277179, w: 0.77844095}
+        length: 51.952023
+        parentId: -1
+        color:
+          serializedVersion: 2
+          rgba: 4294902015
+      - name: bone_7
+        guid: 7ee7b8b96afea6d4793ab94b685b18c4
+        position: {x: 314.11234, y: 16.210255, z: 0}
+        rotation: {x: 0, y: 0, z: 0.7898839, w: 0.6132564}
+        length: 54.300972
+        parentId: -1
+        color:
+          serializedVersion: 2
+          rgba: 4278223103
+      - name: bone_8
+        guid: 652d4261c5afa5b4e88996e396433e2a
+        position: {x: 497.01318, y: 221.74432, z: 0}
+        rotation: {x: 0, y: 0, z: 0.99866384, w: 0.05167847}
+        length: 65.18928
+        parentId: -1
+        color:
+          serializedVersion: 2
+          rgba: 4278255488
       spriteID: 025e1bbec4994e0d0800000000000000
       internalID: -3394419663479642848
       vertices:
