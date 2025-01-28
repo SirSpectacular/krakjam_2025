@@ -1,5 +1,5 @@
-@RD /S /Q "D:\PHP_Projects\testproject\Release\testfolder"
-rm -rf node_modules;
-rm -f package-lock.json;
-npm install;
-npm start;
+CALL rmdir /s /q node_modules
+CALL del package-lock.json
+CALL npm install vite
+CALL npm install
+CALL npm start

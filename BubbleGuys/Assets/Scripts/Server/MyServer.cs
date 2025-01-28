@@ -32,7 +32,7 @@ namespace Server
             
             Debug.Log("Player joined: " + connection.id);
             _playerMap.Add(connection);
-            _playerNames.Invoke("Add_" + _address);
+            _playerNames.Invoke("Address_" + Address);
         }
   
         public override void OnMessage(WebSocketMessage message)

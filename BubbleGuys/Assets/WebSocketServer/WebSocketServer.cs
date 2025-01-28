@@ -30,8 +30,8 @@ namespace WebSocketServer {
 
         public ConcurrentQueue<WebSocketEvent> Events;
 
-        protected readonly string _address = Dns.GetHostEntry(Dns.GetHostName()).AddressList[0].ToString();
-        private const int Port = 8080;
+        public static readonly string Address = Dns.GetHostEntry(Dns.GetHostName()).AddressList[0].ToString();
+        public static readonly int Port = 8080;
         private const string IPAddressSavePath = "../gamepad-main/your_ip_address";
         public WebSocketOpenEvent onOpen;
         public WebSocketMessageEvent onMessage;
@@ -51,7 +51,7 @@ namespace WebSocketServer {
             _tcpListenerThread.Start();
 
             using StreamWriter writer = new StreamWriter(IPAddressSavePath);
-            writer.WriteLine(_address);
+            writer.WriteLine(Address);
         }
         
         void OnApplicationQuit()
@@ -79,7 +79,7 @@ namespace WebSocketServer {
         private void ListenForTcpConnection () { 		
             try {
                 // Create listener on <address>:<port>.
-                _tcpListener = new TcpListener(IPAddress.Parse(_address), Port);
+                _tcpListener = new TcpListener(IPAddress.Parse(Address), Port);
                 _tcpListener.Start();
                 Debug.Log("WebSocket server is listening for incoming connections.");
                 while (true) {

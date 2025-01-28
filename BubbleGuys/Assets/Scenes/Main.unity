@@ -1339,7 +1339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3804451994994553488, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
       propertyPath: m_text
-      value: 'Connected players:'
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 3804451994994553488, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
       propertyPath: m_margin.w

@@ -178,7 +178,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '<align=left>Connected players:'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 61841c46779787c4eaa62a6a4a19c5f3, type: 2}
   m_sharedMaterial: {fileID: 8568126258477855076, guid: 61841c46779787c4eaa62a6a4a19c5f3, type: 2}
