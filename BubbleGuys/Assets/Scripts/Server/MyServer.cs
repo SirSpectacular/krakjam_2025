@@ -20,6 +20,7 @@ namespace Server
         private static UnityEvent<MyDeviceState> _player3 = new UnityEvent<MyDeviceState>();
         private static UnityEvent<MyDeviceState> _player4 = new UnityEvent<MyDeviceState>();
         public static UnityEvent<string> _playerNames = new UnityEvent<string>();
+        private Dictionary<WebSocketConnection, string> playerNameMap = new Dictionary<WebSocketConnection, string>();
         [SerializeField] public TextMeshPro playersJoined;
 
         public override void OnOpen(WebSocketConnection connection) {
@@ -31,6 +32,7 @@ namespace Server
             
             Debug.Log("Player joined: " + connection.id);
             _playerMap.Add(connection);
+            _playerNames.Invoke("Add_" + _address);
         }
   
         public override void OnMessage(WebSocketMessage message)
@@ -47,7 +49,8 @@ namespace Server
                 if (split.Length == 2)
                 {
                     OnUpdateUserName(playerNo, split[1]);
-                    _playerNames.Invoke(split[1]);
+                    playerNameMap.Add(message.connection, split[1]);
+                    _playerNames.Invoke("Add_" + split[1]);
                 }
             }
             if (message.data.StartsWith("Move_"))
@@ -142,6 +145,7 @@ namespace Server
 
         public override void OnClose(WebSocketConnection connection) {
             Debug.Log("Player left: " + connection.id);
+            _playerNames.Invoke("Delete_" + playerNameMap[connection]);
             _playerMap.Remove(connection);
         }
 

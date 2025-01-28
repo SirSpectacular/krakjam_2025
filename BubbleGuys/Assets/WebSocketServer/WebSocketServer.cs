@@ -30,7 +30,7 @@ namespace WebSocketServer {
 
         public ConcurrentQueue<WebSocketEvent> Events;
 
-        private readonly string _address = Dns.GetHostEntry(Dns.GetHostName()).AddressList[0].ToString();
+        protected readonly string _address = Dns.GetHostEntry(Dns.GetHostName()).AddressList[0].ToString();
         private const int Port = 8080;
         private const string IPAddressSavePath = "../gamepad-main/your_ip_address";
         public WebSocketOpenEvent onOpen;

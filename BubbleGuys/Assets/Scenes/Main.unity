@@ -1337,6 +1337,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3804451994994553488, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_text
+      value: 'Connected players:'
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804451994994553488, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_margin.w
+      value: -346.6535
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804451994994553488, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_margin.x
+      value: 62.336426
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804451994994553488, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_margin.y
+      value: -64.99765
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804451994994553488, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_margin.z
+      value: 359.98828
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804451994994553488, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_VerticalAlignment
+      value: 256
+      objectReference: {fileID: 0}
+    - target: {fileID: 3804451994994553488, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_HorizontalAlignment
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4241505583943222320, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
       propertyPath: m_Color.b
       value: 0.6830188
@@ -1348,6 +1376,14 @@ PrefabInstance:
     - target: {fileID: 4241505583943222320, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
       propertyPath: m_Color.r
       value: 0.6830188
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355286029741557188, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 166
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355286029741557188, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6280133302437456994, guid: cfeccfea210b6417e94478c21e4fab49, type: 3}
       propertyPath: m_IsActive
