@@ -1,15 +1,15 @@
-using System;
 // Networking libs
 using System.Net;
 using System.Net.Sockets;
 // For creating a thread
 using System.Threading;
 // For List & ConcurrentQueue
-using System.Collections.Generic;
 using System.Collections.Concurrent;
+using System.IO;
 // Unity & Unity events
 using UnityEngine;
 using UnityEngine.Events;
+using Debug = UnityEngine.Debug;
 
 namespace WebSocketServer {
     [System.Serializable]
@@ -24,45 +24,54 @@ namespace WebSocketServer {
     public class WebSocketServer : MonoBehaviour
     {
         // The tcpListenerThread listens for incoming WebSocket connections, then assigns the client to handler threads;
-        private TcpListener tcpListener;
-        private Thread tcpListenerThread;
-        private List<Thread> workerThreads;
-        private TcpClient connectedTcpClient;
+        private TcpListener _tcpListener;
+        private Thread _tcpListenerThread;
+        private TcpClient _connectedTcpClient;
 
-        public ConcurrentQueue<WebSocketEvent> events;
+        public ConcurrentQueue<WebSocketEvent> Events;
 
-        public string address;
-        public int port;
+        private readonly string _address = Dns.GetHostEntry(Dns.GetHostName()).AddressList[0].ToString();
+        private const int Port = 8080;
+        private const string IPAddressSavePath = "../gamepad-main/your_ip_address";
         public WebSocketOpenEvent onOpen;
         public WebSocketMessageEvent onMessage;
         public WebSocketCloseEvent onClose;
-
+        
         void Awake() {
             if (onMessage == null) onMessage = new WebSocketMessageEvent();
         }
 
         void Start() {
-            events = new ConcurrentQueue<WebSocketEvent>();
-            workerThreads = new List<Thread>();
+            Events = new ConcurrentQueue<WebSocketEvent>();
 
-            tcpListenerThread = new Thread (new ThreadStart(ListenForTcpConnection));
-            tcpListenerThread.IsBackground = true;
-            tcpListenerThread.Start();
+            _tcpListenerThread = new Thread (ListenForTcpConnection)
+            {
+                IsBackground = true
+            };
+            _tcpListenerThread.Start();
+
+            using StreamWriter writer = new StreamWriter(IPAddressSavePath);
+            writer.WriteLine(_address);
         }
-
+        
+        void OnApplicationQuit()
+        {
+            _tcpListenerThread.Abort();
+            Debug.Log("WebSocket server shutting down");
+        }
+       
         void Update() {
-            WebSocketEvent wsEvent;
-            while (events.TryDequeue(out wsEvent)) {
+            while (Events.TryDequeue(out var wsEvent)) {
                 if (wsEvent.type == WebSocketEventType.Open) {
                     onOpen.Invoke(wsEvent.connection);
-                    this.OnOpen(wsEvent.connection);
+                    OnOpen(wsEvent.connection);
                 } else if (wsEvent.type == WebSocketEventType.Close) {
                     onClose.Invoke(wsEvent.connection);
-                    this.OnClose(wsEvent.connection);
+                    OnClose(wsEvent.connection);
                 } else if (wsEvent.type == WebSocketEventType.Message) {
                     WebSocketMessage message = new WebSocketMessage(wsEvent.connection, wsEvent.data);
                     onMessage.Invoke(message);
-                    this.OnMessage(message);
+                    OnMessage(message);
                 }
             }
         }
@@ -70,17 +79,17 @@ namespace WebSocketServer {
         private void ListenForTcpConnection () { 		
             try {
                 // Create listener on <address>:<port>.
-                tcpListener = new TcpListener(IPAddress.Parse(address), port);
-                tcpListener.Start();
+                _tcpListener = new TcpListener(IPAddress.Parse(_address), Port);
+                _tcpListener.Start();
                 Debug.Log("WebSocket server is listening for incoming connections.");
                 while (true) {
                     // Accept a new client, then open a stream for reading and writing.
-                    connectedTcpClient = tcpListener.AcceptTcpClient();
+                    _connectedTcpClient = _tcpListener.AcceptTcpClient();
                     // Create a new connection
-                    WebSocketConnection connection = new WebSocketConnection(connectedTcpClient, this);
+                    WebSocketConnection connection = new WebSocketConnection(_connectedTcpClient, this);
                     // Establish connection
                     connection.Establish();
-                    // // Start a new thread to handle the connection.
+                    // Start a new thread to handle the connection.
                     // Thread worker = new Thread (new ParameterizedThreadStart(HandleConnection));
                     // worker.IsBackground = true;
                     // worker.Start(connection);
@@ -89,7 +98,7 @@ namespace WebSocketServer {
                 }
             }
             catch (SocketException socketException) {
-                Debug.Log("SocketException " + socketException.ToString());
+                Debug.Log("SocketException " + socketException);
             }
         }
 

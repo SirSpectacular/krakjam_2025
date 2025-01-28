@@ -84,7 +84,7 @@ namespace WebSocketServer {
 
                 // Call the server callback.
                 WebSocketEvent wsEvent = new WebSocketEvent(this, WebSocketEventType.Open, null);
-                server.events.Enqueue(wsEvent);
+                server.Events.Enqueue(wsEvent);
                 return true;
             } else {
                 return false;
@@ -100,7 +100,7 @@ namespace WebSocketServer {
                         // Let the server know of the message.
                         string data = WebSocketProtocol.DecodeText(dataframe);
                         WebSocketEvent wsEvent = new WebSocketEvent(this, WebSocketEventType.Message, data);
-                        server.events.Enqueue(wsEvent);
+                        server.Events.Enqueue(wsEvent);
                     } else if ((WebSocketOpCode)dataframe.opcode == WebSocketOpCode.Close) {
                         // Handle closing the connection.
                         Debug.Log("Client closed the connection.");
@@ -109,7 +109,7 @@ namespace WebSocketServer {
                         client.Close();
                         // Call server callback.
                         WebSocketEvent wsEvent = new WebSocketEvent(this, WebSocketEventType.Close, null);
-                        server.events.Enqueue(wsEvent);
+                        server.Events.Enqueue(wsEvent);
                         // Jump out of the loop.
                         break;
                     }

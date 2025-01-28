@@ -1,6 +1,6 @@
 import "./style.css";
 import { Gamepad, Button, Joystick } from "../src/gamepad";
-import Cookies from 'js-cookie'
+import fs from "node:fs";
 
 const ELNew = (tag, prop) => Object.assign(document.createElement(tag), prop);
 const EL = (sel, PAR) => (PAR || document).querySelector(sel);
@@ -162,62 +162,68 @@ const engine = () => {
 
 engine();
 
-const socket = new WebSocket("ws://172.97.3.219:8080");
+fetch("your_ip_address")
+    .then((res) => res.text())
+    .then((text) => {
+        let address = text.slice(0, text.indexOf("\n"));
+        const socket = new WebSocket(`ws://${address}:8080`);
+        let username = localStorage.getItem('username')
+        console.log("Connected to websocket as " + username);
 
-let username = localStorage.getItem('username')
+        waitForSocketConnection(socket, function(){
+            socket.send("Name_"+username);
+        });
 
-waitForSocketConnection(socket, function(){
-    socket.send("Name_"+username);
-});
+        socket.addEventListener("open", (event) => {
+            socket.send("Hello Server!");
+        });
 
-socket.addEventListener("open", (event) => {
-    socket.send("Hello Server!");
-});
+        socket.addEventListener("message", (event) => {
+            console.log("Message from server ", event.data);
+        });
 
-socket.addEventListener("message", (event) => {
-    console.log("Message from server ", event.data);
-});
-
-// Gamepad Example:
-const GP = new Gamepad([
-    new Joystick({
-        id: "move",
-        parentElement: document.querySelector("#app-left"),
-        radius: 60,
-        axis: "all",
-        fixed: true,
-        position: {
-            left: "100%",
-            top: "25%",
-        },
-        onInput(state) {
-            PL.controller.value = state.value;
-            PL.controller.angle = state.angle;
-            waitForSocketConnection(socket, function(){
-                socket.send("Move_"+state.value+"_"+state.angle);
-            });
-        },
-    }),
-    new Button({
-        id: "fire",
-        parentElement: document.querySelector("#app-right"),
-        radius: 60,
-        fixed: true,
-        position: {
-            right: "100%",
-            bottom: "25%",
-        },
-        onInput(state) {
-            if (!state.value) {
-                return;
-            }
-            GP.vibrate([100]);
-            waitForSocketConnection(socket, function(){
-                socket.send("Action");
-            });
-        },
-    }),
-]);
+        // Gamepad Example:
+        const GP = new Gamepad([
+            new Joystick({
+                id: "move",
+                parentElement: document.querySelector("#app-left"),
+                radius: 60,
+                axis: "all",
+                fixed: true,
+                position: {
+                    left: "100%",
+                    top: "25%",
+                },
+                onInput(state) {
+                    PL.controller.value = state.value;
+                    PL.controller.angle = state.angle;
+                    waitForSocketConnection(socket, function(){
+                        socket.send("Move_"+state.value+"_"+state.angle);
+                    });
+                },
+            }),
+            new Button({
+                id: "fire",
+                parentElement: document.querySelector("#app-right"),
+                radius: 60,
+                fixed: true,
+                position: {
+                    right: "100%",
+                    bottom: "25%",
+                },
+                onInput(state) {
+                    if (!state.value) {
+                        return;
+                    }
+                    GP.vibrate([100]);
+                    waitForSocketConnection(socket, function(){
+                        socket.send("Action");
+                    });
+                },
+            }),
+        ]);
+    })
+    .catch((e) => console.error(e));
 //
 // const ControllerSettingsButton = new Button({
 //     id: "menu-button",

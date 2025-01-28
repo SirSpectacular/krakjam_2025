@@ -1,8 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
+using Game;
 using Input;
 using Server.PlayerMoves;
+using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Events;
@@ -17,6 +19,8 @@ namespace Server
         private static UnityEvent<MyDeviceState> _player2 = new UnityEvent<MyDeviceState>();
         private static UnityEvent<MyDeviceState> _player3 = new UnityEvent<MyDeviceState>();
         private static UnityEvent<MyDeviceState> _player4 = new UnityEvent<MyDeviceState>();
+        public static UnityEvent<string> _playerNames = new UnityEvent<string>();
+        [SerializeField] public TextMeshPro playersJoined;
 
         public override void OnOpen(WebSocketConnection connection) {
             if (_playerMap.Count >= 4)
@@ -43,6 +47,7 @@ namespace Server
                 if (split.Length == 2)
                 {
                     OnUpdateUserName(playerNo, split[1]);
+                    _playerNames.Invoke(split[1]);
                 }
             }
             if (message.data.StartsWith("Move_"))
